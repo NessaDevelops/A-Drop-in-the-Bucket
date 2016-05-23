@@ -10,6 +10,7 @@ router.post('/', function (req, res) {
 
     var body = req.body;
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
+    var now = new Date();
     
     Users.findOne({
 
@@ -37,7 +38,8 @@ router.post('/', function (req, res) {
             var newUser = new Users({
                 username: body.username,
                 email: body.email,
-                password: body.password1
+                password: body.password1,
+                lastLoggedIn: now
             });
 
             // save the user to the database

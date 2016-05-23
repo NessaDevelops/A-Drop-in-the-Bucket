@@ -7,7 +7,7 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundPosition = "center";
-  
+
     var viewBucketlist, bucketlist, getBucketlist;
 
     $scope.viewBucketlist = viewBucketlist = {};
@@ -150,5 +150,5 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
     });
 
     $window.location.href = '#/view-all-bucketlists';
-  }
+  };
   });

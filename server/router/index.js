@@ -8,6 +8,7 @@ module.exports = function (app) {
     app.use('/editBucketlist', require('./routes/editBucketlist'));
     app.use('/editGoal', require('./routes/editGoal'));
     app.use('/editMemory', require('./routes/editGoal'));
+    app.use('/editUser', require('./routes/editUser'));
     app.use('/findGoals', require('./routes/findGoals'));
     app.use('/findMemories', require('./routes/findMemories'));
     app.use('/deleteBucketlist', require('./routes/deleteBucketlist'));

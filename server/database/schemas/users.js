@@ -10,7 +10,8 @@ var userSchema = new Schema({
     firstName: { type: String, required: false},
     lastName: { type: String, required: false},
     gender: { type: Boolean, required: false},
-    dob: { type: Date, required: false}
+    dob: { type: Date, required: false},
+    lastLoggedIn: { type: Date, required: true}
 
 });
 
