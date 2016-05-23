@@ -1,0 +1,18 @@
+<div class="login-container" ng-controller="LoginCtrl">
+
+  <div class="login-form">
+    <form>
+      <div class="form-group">
+        <input id="email" name="email" ng-model="login.user.email" type="text" placeholder="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="password" name="password" ng-model="login.user.password" type="password" placeholder="password" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <button ng-click="login.submit()" id="login" name="login" class="btn btn-success btn-block">log in</button>
+      </div>
+    </form>
+  </div>
+
+</div>

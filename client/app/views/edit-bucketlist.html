@@ -1,0 +1,39 @@
+<div class="edit-bucketlist-container" ng-controller="EditBucketlistCtrl">
+  <div class="edit-bucketlist-form">
+    <div class="edit-bucketlist-header">
+      <label>edit bucketlist</label>
+    </div>
+    <div class="labels">
+      <p>name</p>
+      <p>members</p>
+      <p>tags</p>
+      <p>description</p>
+      <p>visibility</p>
+      <p>mature</p>
+    </div>
+    <form class="top">
+      <div class="form-group">
+        <input id="name" name="name" ng-model="editBucketlist.bucketlist.name" type="text" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <input id="members" name="members" ng-model="editBucketlist.bucketlist.members" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="tags" name="tags" ng-model="editBucketlist.bucketlist.tags" type="text" value="Chris" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="description" name="description" ng-model="editBucketlist.bucketlist.description" type="text" class="form-control">
+      </div>
+        <div class="form-group">
+          <input class="visibility" type="radio" name="visibility" ng-model="editBucketlist.bucketlist.private" value="private" ng-checked="true"> private
+          <input class="visibility" type="radio" name="visibility" value="public"> public
+        </div>
+        <div class="form-group">
+          <input class="maturity" type="checkbox" name="maturity" ng-model="editBucketlist.bucketlist.mature" value="maturity" checked> private
+        </div>
+      <div class="form-group">
+        <button ng-click="editBucketlist.submit()" id="editBucketlist" name="editBucketlist" class="btn btn-success btn-block">edit bucketlist</button>
+      </div>
+    </form>
+  </div>
+</div>

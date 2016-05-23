@@ -1,0 +1,193 @@
+.profile-container {
+  width: 90%;
+  min-width: 1150px;
+  max-width: 1400px;
+  margin: 0 auto 0 auto;
+
+  .profile-header {
+    margin: 100px auto 0 auto;
+    width: 80%;
+    color: $second-color;
+
+    .profile-top-div {
+      background-color: rgba($second-color, .5);
+      height: 180px;
+      margin-bottom: -15px;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+
+      .user-pic {
+        border: 1px solid $form-color;
+        border-radius: 3px 3px 3px 3px;
+        -moz-border-radius: 3px 3px 3px 3px;
+        -webkit-border-radius: 3px 3px 3px 3px;
+        height: 190px;
+        content: url('../../images/Avatar.jpg');
+        float: left;
+        margin-left: 15%;
+        margin-right: 20px;
+        position: relative;
+        top: 50px;
+      }
+
+      .top-header-text {
+        width: 85%;
+        text-align: left;
+        padding-top: 20px;
+
+        .user-name {
+          font-size: 24px;
+          font-family: 'font-extra-bold';
+        }
+
+        .last-online {
+          margin-top: -25px;
+          font-size: 14px;
+        }
+
+        .user-bio {
+        }
+      }
+    }
+
+    .bottom-div {
+      background-color: $third-color;
+      height: 120px;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+
+      .bottom-header-text {
+        width: 85%;
+        margin-left: 40%;
+        padding-top: 30px;
+
+        .bucketlists, .bucketlists-completed, .goals, .goals-completed, .achievements {
+          float: left;
+          margin-top: -18px;
+          text-align: left;
+        }
+
+        .divider {
+          border-left: 1px solid $second-color;
+          border-right: 1px solid #16222c;
+          height: 50px;
+          float: left;
+          margin: 0 20px 0 20px;
+        }
+
+        .bucketlists {
+
+             .bucketlists-text {
+
+             }
+           }
+
+          .bucketlists-completed {
+            width: 80px;
+
+            .bucketlists-completed-text {
+
+            }
+          }
+
+          .goals {
+
+            .goals-text {
+
+            }
+          }
+
+          .goals-completed {
+            width: 75px;
+
+            .goals-completed-text {
+
+            }
+          }
+
+          .achievements {
+            width: 80px;
+
+            .achievements-text {
+
+            }
+          }
+      }
+    }
+
+  }
+
+  .profile-content {
+    background-color: rgba($second-color, .5);
+    margin: 0 auto 40px auto;
+    width: 75%;
+    padding-top: 20px;
+    padding-bottom: 3px;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+
+    .profile-friends, .profile-bucketlists, .profile-memories {
+      margin: 0 auto 25px auto;
+      width: 90%;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+      background-color: $second-color;
+    }
+
+    .icon {
+      height: 25px;
+      float: left;
+      padding: 10px 5px 0 10px;
+    }
+
+    .title {
+      float: left;
+      font-family: 'font-extra-bold';
+      margin-top: 10px;
+      margin-left: 2px;
+    }
+
+    .view-all {
+      float: right;
+      margin-right: 20px;
+      margin-top: 10px;
+      font-family: 'font-extra-bold';
+      color: $primary-color;
+    }
+
+    .profile-friends {
+      height: 130px;
+
+      .profile-friends-header {
+
+      }
+
+      .profile-friends-content {
+
+      }
+    }
+
+    .profile-bucketlists {
+      height: 130px;
+
+      .profile-bucketlists-header {
+
+      }
+    }
+
+    .profile-memories {
+      height: 130px;
+
+      .profile-memories-header {
+
+        .icon {
+          height: 18px;
+        }
+      }
+    }
+  }
+}

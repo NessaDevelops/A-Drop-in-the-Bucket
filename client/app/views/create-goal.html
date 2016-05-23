@@ -1,0 +1,22 @@
+<div class="create-goal-container" ng-controller="CreateGoalCtrl">
+  <div class="create-goal-form">
+    <form>
+      <div class="form-group">
+        <input id="name" name="name" ng-model="createGoal.goal.name" type="text" placeholder="name" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="location" name="location" ng-model="createGoal.goal.location" type="text" placeholder="location" class="form-control">
+      </div>
+      <div class="form-group">
+        <textarea id="description" name="description" ng-model="createGoal.goal.description" type="text-area" placeholder="description" class="form-control"></textarea>
+      </div>
+      <div class="form-group" id="upload-image-container">
+        <input id="upload-goal-image" type="file" name="image" multiple accept="image/*"/>
+      </div>
+      <div class="selected-files"></div>
+      <div class="form-group">
+        <button ng-click="createGoal.submit()" id="createGoal" name="createGoal" class="btn btn-success btn-block">create goal</button>
+      </div>
+    </form>
+  </div>
+</div>

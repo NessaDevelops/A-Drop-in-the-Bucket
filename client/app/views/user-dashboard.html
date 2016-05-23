@@ -1,0 +1,54 @@
+<div class="user-dash-container" ng-controller="UserDashboardCtrl">
+
+  <div class="user-dash-banner">
+    <img src=""/>
+    <p class="welcome">Welcome back {{userParse.username}}!</p>
+    <p class="last-online">Last online: Friday, April 1st 2016 @ 1:56 pm</p>
+  </div>
+
+  <div class="user-dash-content">
+    <div class="my-feed">
+      <div class="my-bucketlists">
+        <a ui-sref="create-bucketlist">
+          <img class="add-list" src=""/>
+        </a>
+        <div class="section-header">
+          <img src=""/>
+          <p>my bucketlists</p>
+          <a ui-sref="view-all-bucketlists">view all</a>
+        </div>
+        <div class="section-content">
+          <div ng-click="viewAllBucketlists.change(bucketlist.name)" ng-repeat="bucketlist in myBucketlists" class="bucketlist">
+            <p class="bucketlist-title">{{bucketlist.name}}</p>
+            <img class="main-pic" src="../images/TravelPic.jpg"/>
+            <img class="second-pic" src="../images/TravelPic3.jpg"/>
+            <img class="third-pic" src="../images/TravelPic4.jpg"/>
+          </div>
+        </div>
+      </div>
+      <div class="my-memories">
+        <div class="section-header">
+          <img src=""/>
+          <p>my memories</p>
+          <a ui-sref="home">view all</a>
+        </div>
+      </div>
+      <div class="my-achievements">
+        <div class="section-header">
+          <img src=""/>
+          <p>my achievements</p>
+          <a ui-sref="home">view all</a>
+        </div>
+      </div>
+    </div>
+    <div class="friend-feed">
+      <div class="friend-header">
+        <img src=""/>
+        <p>friend activity</p>
+      </div>
+      <div class="friend-activity">
+
+      </div>
+    </div>
+  </div>
+</div>

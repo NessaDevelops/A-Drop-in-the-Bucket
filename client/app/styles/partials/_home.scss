@@ -1,0 +1,169 @@
+.home-container {
+
+  .landing-container {
+    background: url("../../images/Splash.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 930px;
+
+    .logo {
+      max-width: 900px;
+      width: 70%;
+      margin: 270px 100px 0 100px;
+      content: url('../../images/BucketlistLogoWhite.png');
+    }
+
+    .slogan {
+      max-width: 800px;
+      width: 60%;
+      content: url('../../images/BucketlistSlogan.png');
+    }
+
+    .splash-button-container {
+      margin-top: 60px;
+
+      .login {
+        width: 10%;
+        max-width: 150px;
+        content: url('../../images/LoginBtn.png');
+        margin-right: 60px;
+      }
+
+      .signup {
+        max-width: 170px;
+        width: 11%;
+        content: url('../../images/SignupBtn.png');
+      }
+    }
+  }
+
+  .definition-container, .our-mission-container {
+    width: 60%;
+    max-width: 800px;
+    margin: 60px auto 60px auto;
+
+    h1 {
+      font-size: 24px;
+      font-family: 'font-extra-bold';
+    }
+  }
+
+  .line-separator {
+    margin: 0 auto 0 auto;
+    width: 50%;
+    height: 1px;
+    background: $third-color;
+    border-bottom: 1px solid $second-color;
+  }
+
+  .home-banner {
+    height: 400px;
+    background: url("../../images/HomePgBkgrnd5.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .home-banner-text {
+      position: relative;
+      top: 70px;
+      left: 20%;
+      padding: 20px;
+      background-color: rgba($third-color, .5);
+      color: $second-color;
+      width: 30%;
+      font-size: 24px;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+    }
+  }
+
+  .feature-container {
+    margin: 0 auto 0 auto;
+    height: 300px;
+    width: 95%;
+    max-width: 1300px;
+
+    .feature {
+      width: 23%;
+      max-width: 300px;
+      display: inline-block;
+      float: left;
+      height: 300px;
+      border: none;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+
+      p {
+        background-color: rgba($third-color, .7);
+        color: $second-color;
+        margin: 115px auto 0 auto;
+        width: 150px;
+        padding: 20px 0 20px 0;
+        font-family: 'font-bold';
+        border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+      }
+    }
+
+    #social-aspect-feature {
+      background: url("../../images/SocialPic.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin-right: 20px;
+    }
+
+    #memory-album-feature {
+      background: url("../../images/MemoryPhoto.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin-right: 20px;
+    }
+
+    #achievement-feature {
+      background: url("../../images/MedalPic.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin-right: 20px;
+    }
+
+    #map-feature {
+      background: url("../../images/MapImage.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  }
+
+  .recent-bucketlists-container {
+    margin: 70px 0 100px 0;
+    font-family: 'font-extra-bold';
+    font-size: 24px;
+
+    .recent-bucketlists {
+
+      height: 300px;
+      background: url("../../images/HomeBrowseBkgrnd.png") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+      .recent-bucketlist {
+
+      }
+    }
+  }
+}

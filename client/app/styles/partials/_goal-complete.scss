@@ -1,0 +1,83 @@
+.goal-complete-container {
+  margin: 200px auto 100px auto;
+  background-color: rgba($second-color, .9);
+  width: 70%;
+  min-width: 800px;
+  max-width: 1100px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+
+  .goal-complete-header {
+
+    .title {
+      font-size: 20px;
+      font-family: 'font-extra-bold';
+    }
+
+    .complete-date {
+      margin-top: -18px;
+    }
+
+    .bucketlist {
+      margin-top: -14px;
+      padding-bottom: 10px;
+
+      a {
+        color: $primary-color;
+      }
+    }
+
+    .people-icon {
+      height: 20px;
+      float: left;
+      margin-left: 270px;
+      margin-right: -240px;
+
+    }
+
+    .members {
+
+    }
+
+    .loc-icon {
+      height: 20px;
+      float: left;
+      margin: -15px -290px 0 300px;
+    }
+
+    .location {
+      margin-top: -15px;
+    }
+
+  }
+
+  .goal-complete-content {
+
+    .main-img {
+      width: 100%;
+    }
+
+    .main-img img {
+      height: 300px;
+      padding: 0 100px 0 100px;
+    }
+
+    .small-img {
+      height: 80px;
+      width: 130px;
+      margin-top: 10px;
+    }
+
+    .desc-title, .desc {
+      text-align: left;
+      width: 50%;
+      margin: 0 auto 0 auto;
+    }
+
+    .desc-title {
+      font-family: 'font-extra-bold';
+      margin-top: 25px;
+      margin-bottom: 1px;
+    }
+  }
+}

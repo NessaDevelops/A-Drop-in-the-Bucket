@@ -1,0 +1,28 @@
+<div class="create-bucketlist-container" ng-controller="CreateBucketlistCtrl">
+  <div class="create-bucketlist-form">
+    <form>
+      <div class="form-group">
+        <input id="name" name="name" ng-model="createBucketlist.bucketlist.name" type="text" placeholder="name" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="members" name="members" ng-model="createBucketlist.bucketlist.members" type="text" placeholder="members" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="tags" name="tags" ng-model="createBucketlist.bucketlist.tags" type="text" placeholder="tags" class="form-control">
+      </div>
+      <div class="form-group">
+        <textarea id="description" name="description" ng-model="createBucketlist.bucketlist.description" type="text-area" placeholder="description" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <input class="visibility" type="radio" name="visibility" ng-model="createBucketlist.bucketlist.private" value="private" ng-checked="true"> private
+        <input class="visibility" type="radio" name="visibility" value="public"> public
+      </div>
+      <div class="form-group">
+        <input class="maturity" type="checkbox" name="maturity" ng-model="createBucketlist.bucketlist.mature" value="maturity"> mature content
+      </div>
+      <div class="form-group">
+        <button ng-click="createBucketlist.submit()" id="createBucketlist" name="createBucketlist" class="btn btn-success btn-block">create bucketlist</button>
+      </div>
+    </form>
+  </div>
+</div>

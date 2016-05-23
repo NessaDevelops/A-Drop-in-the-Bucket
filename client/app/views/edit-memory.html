@@ -1,0 +1,30 @@
+<div class="edit-memory-container" ng-controller="EditMemoryCtrl">
+  <div class="edit-memory-form">
+    <div class="edit-memory-header">
+      <label>edit memory</label>
+    </div>
+    <div class="labels">
+      <p>name</p>
+      <p>members</p>
+      <p>location</p>
+      <p>description</p>
+    </div>
+    <form class="top">
+      <div class="form-group">
+        <input id="name" name="name" ng-model="editMemory.memory.name" type="text" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <input id="members" name="members" ng-model="editMemory.memory.members" type="text" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <input id="location" name="location" ng-model="editMemory.memory.location" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="description" name="description" ng-model="editMemory.memory.description" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <button ng-click="editMemory.submit()" id="editMemory" name="editMemory" class="btn btn-success btn-block">edit memory</button>
+      </div>
+    </form>
+  </div>
+</div>

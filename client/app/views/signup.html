@@ -1,0 +1,22 @@
+<div class="signup-container" ng-controller="SignupCtrl">
+  <div class="signup-form">
+    <form>
+      <div class="form-group">
+        <input id="username" name="username" ng-model="signup.user.username" type="text" placeholder="username" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="email" name="email" ng-model="signup.user.email" type="text" placeholder="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="password1" name="password1" ng-model="signup.user.password1" type="password" placeholder="password" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="password2" name="password2" ng-model="signup.user.password2" type="password" placeholder="confirm password" class="form-control">
+      </div>
+
+      <div class="form-group">
+          <button ng-click="signup.submit()" id="signup" name="signup" class="btn btn-success btn-block">sign up</button>
+      </div>
+    </form>
+  </div>
+</div>

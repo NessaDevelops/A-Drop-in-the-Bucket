@@ -1,0 +1,18 @@
+<div class="header" ng-controller="HeaderCtrl">
+  <a ui-sref="home">
+    <img class="header-logo" src=",,/../images/BucketlistLogo.png"/>
+  </a>
+  <a ng-show="loggedIn" ui-sref="login">
+    <img ng-click='header.logout()' class="menu-icon" src=",,/../images/MenuIcon.png"/>
+  </a>
+  <a ng-show="loggedIn" ui-sref="user-dashboard">
+    <img class="dashboard-icon" src=",,/../images/DashboardIcon.png"/>
+  </a>
+  <p>{{loggedIn}}</p>
+
+  <!--<ul class="nav navbar-nav">-->
+  <!--<li class="active"><a href="#/">Home</a></li>-->
+  <!--<li><a ng-href="#/about">About</a></li>-->
+  <!--<li><a ng-href="#/">Contact</a></li>-->
+  <!--</ul>-->
+</div>

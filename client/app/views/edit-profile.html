@@ -1,0 +1,79 @@
+<div class="edit-profile-container" ng-controller="EditProfileCtrl">
+  <div class="pic-container">
+    <img class="pic" src=""/>
+    <button class="upload-pic">upload new</button>
+  <img class="trash" src=""/>
+  </div>
+  <div class="edit-profile-form">
+    <div class="edit-profile-header">
+      <label class="basic-info">basic information</label>
+      <label class="public">public</label>
+    </div>
+    <div class="labels">
+      <p class="username">username</p>
+      <p class="email">email</p>
+      <p>first name</p>
+      <p>last name</p>
+      <p>gender</p>
+      <p>date of birth</p>
+    </div>
+    <form class="top">
+      <div class="form-group">
+        <input id="username" name="username" ng-model="createGoal.goal.name" type="text" value="Thuganomix" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <input id="email" name="email" ng-model="createGoal.goal.location" type="text" value="thuganomix@yahoo.com" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="first-name" name="first-name" ng-model="createGoal.goal.location" type="text" value="Chris" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="last-name" name="last-name" ng-model="createGoal.goal.location" type="text" value="Matthews" class="form-control">
+      </div>
+      <div class="form-group">
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <div class="form-group">
+          <select name="month">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="day">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="year">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <button ng-click="createGoal.submit()" id="createGoal" name="createGoal" class="btn btn-success btn-block">create goal</button>
+      </div>
+    </form>
+    </div>
+
+  <div class="edit-profile-form-2">
+    <form class="bottom">
+      <div class="form-group">
+        <input id="oldpw" name="oldpw" ng-model="createGoal.goal.name" type="text" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <input id="pw1" name="pw2" ng-model="createGoal.goal.name" type="text" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <input id="pw2" name="pw2" ng-model="createGoal.goal.name" type="text" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <button ng-click="createGoal.submit()" id="savePw" name="savePw" class="btn btn-success btn-block">change password</button>
+      </div>
+    </form>
+  </div>
+</div>

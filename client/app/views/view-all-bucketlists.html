@@ -1,0 +1,19 @@
+<div class="view-all-container" ng-controller="ViewAllBucketlistsCtrl">
+  <div class="view-all-header">
+    <p>my bucketlists</p>
+    <a ui-sref="create-bucketlist">
+      <img class="add-list" src=""/>
+    </a>
+  </div>
+  <div class="view-all-content">
+    <div style="cursor: pointer" ng-click="viewAllBucketlists.change(bucketlist.name, bucketlist.owner, bucketlist.members, bucketlist.description, bucketlist.tags)" ng-repeat="bucketlist in myBucketlists" class="bucketlist">
+      <p class="bucketlist-title">{{bucketlist.name}}</p>
+      <img class="people-icon" src=""/>
+      <p class="members">{{bucketlist.members}}</p>
+      <img class="main-pic" src=""/>
+      <img class="second-pic" src=""/>
+      <img class="third-pic" src=""/>
+      <p class="tags">tags: {{bucketlist.tags}}</p>
+    </div>
+  </div>
+</div>

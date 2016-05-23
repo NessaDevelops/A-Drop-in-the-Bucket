@@ -1,0 +1,79 @@
+.edit-bucketlist-container, .edit-goal-container, .edit-memory-container {
+  margin-top: 180px;
+  background-color: rgba($third-color, .3);
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .edit-bucketlist-form, .edit-goal-form, .edit-memory-form {
+    color: $second-color;
+    margin: 40px auto 0 auto;
+    font-family: 'font-extra-bold';
+  }
+
+  .edit-bucketlist-header, .edit-goal-header, .edit-memory-header {
+    margin: 0 auto 0 auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    .basic-info {
+      position: relative;
+      left: 20px;
+    }
+    .public {
+      position: relative;
+      left: 180px;
+    }
+  }
+
+  .labels {
+    width: 90px;
+    height: 300px;
+    float: left;
+    margin-left: 10px;
+
+    p {
+      margin-bottom: 35px;
+    }
+  }
+
+  .top {
+    width: 400px;
+    margin: 10px auto 0 auto;
+
+    .form-group {
+      width: 360px;
+    }
+    .form-control {
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: $form-size;
+      font-family: 'font-reg';
+      width: 350px;
+    }
+    .form-control, button {
+      border: 1px solid $form-color;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+    }
+    .form-control:focus {
+      -moz-box-shadow: 0 0 8px $primary-color;
+      -webkit-box-shadow: 0 0 8px $primary-color;
+      box-shadow: 0 0 8px $primary-color;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  button {
+    font-family: 'font-extra-bold';
+    background-color: $second-color;
+    height: 30px;
+    width: 300px;
+    color: $third-color;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    margin-left: -100px;
+    font-size: 16px;
+  }
+}

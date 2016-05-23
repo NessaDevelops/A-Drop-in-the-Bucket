@@ -1,0 +1,57 @@
+//body {
+//  background: url("../../images/SignupBkgrnd.jpg") no-repeat center center fixed;
+//  -webkit-background-size: cover;
+//  -moz-background-size: cover;
+//  -o-background-size: cover;
+//  background-size: cover;
+//}
+
+.signup-container, .login-container, .login-success-container, .signup-success-container, .create-bucketlist-container,
+.create-goal-container, .create-memory-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .signup-form, .login-form, .login-success-text, .signup-success-text, .create-bucketlist-form, .create-goal-form,
+  .create-memory-form {
+
+    .form-control {
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: $form-size;
+      font-family: 'font-reg';
+    }
+    .form-control, button {
+      border: 1px solid $form-color;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+    }
+    .form-control:focus {
+      -moz-box-shadow: 0 0 8px $primary-color;
+      -webkit-box-shadow: 0 0 8px $primary-color;
+      box-shadow: 0 0 8px $primary-color;
+      border: 1px solid $primary-color;
+    }
+    button {
+      font-family: 'font-extra-bold';
+      background-color: $second-color;
+      height: 40px;
+      color: $third-color;
+      margin-top: 20px;
+      font-size: 22px;
+    }
+  }
+
+  .signup-form  .form-control, .login-form .form-control {
+    width: 350px;
+  }
+
+  .signup-form, .login-form, .login-success-text, .signup-success-text {
+    margin-top: 45%;
+
+    button {
+      width: 372px;
+    }
+  }
+}

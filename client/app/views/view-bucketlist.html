@@ -1,0 +1,63 @@
+<div class="view-container" ng-controller="ViewBucketlistCtrl">
+  <div class="view-header">
+    <p class="title">{{myBucketlist.name}}</p>
+    <img class="people-icon" src=""/>
+    <p class="members">{{myBucketlist.members}}</p>
+    <p class="description">{{myBucketlist.desc}}</p>
+  </div>
+  <div class="line-separator"></div>
+  <div class="view-content">
+    <div class="goal" ng-repeat="memory in myMemories">
+      <img class="picture" src=""/>
+      <div class="goal-info">
+        <p class="goal-title">{{memory.name}}</p>
+        <img class="loc-icon" src=""/>
+        <p class="goal-loc">{{memory.location}}</p>
+        <p class="goal-desc">{{memory.description}}</p>
+      </div>
+      <div class="goal-btns">
+        <a ng-click="viewBucketlist.editMemory(memory.name, memory.description, memory.location)">
+          <img class="edit-goal" src=""/>
+        </a>
+        <a ng-click="viewBucketlist.finishGoal(goal.name, goal.description, goal.location)">
+          <img class="complete-goal" src=""/>
+        </a>
+        <a ng-click="viewBucketlist.viewMemory(memory.name, memory.description, memory.location)">
+          <img class="view-mwe" src=""/>
+        </a>
+        <a ng-click="viewBucketlist.deleteMemory(memory.name, memory.description, memory.location)">
+          <img class="delete-goal" src=""/>
+        </a>
+      </div>
+    </div>
+    <div class="goal" ng-repeat="goal in myGoals">
+      <img class="picture" src=""/>
+      <div class="goal-info">
+        <p class="goal-title">{{goal.name}}</p>
+        <img class="loc-icon" src=""/>
+        <p class="goal-loc">{{goal.location}}</p>
+        <p class="goal-desc">{{goal.description}}</p>
+      </div>
+      <div class="goal-btns">
+        <a ng-click="viewBucketlist.editGoal(goal.name, goal.description, goal.location)">
+          <img class="edit-goal" src=""/>
+        </a>
+        <a ng-click="viewBucketlist.finishGoal(goal.name, goal.description, goal.location)">
+          <img class="incomplete-goal" src=""/>
+        </a>
+        <a ng-click="viewBucketlist.deleteGoal(goal.name, goal.description, goal.location)">
+          <img class="delete-goal" src=""/>
+        </a>
+      </div>
+    </div>
+    <p class="tags">tags: {{myBucketlist.tags}}</p>
+    <a ui-sref="edit-bucketlist">
+      <img class="edit-goal" src=""/>
+    </a>
+    <img class="trash-icon" ng-click="viewBucketlist.deleteBucketlist()" src="../images/TrashIcon.png"/>
+    <!--<iframe src="//www.google.com/maps/embed/v1/place?q=Harrods,Brompton%20Rd,%20UK-->
+      <!--&zoom=17-->
+      <!--&key=AIzaSyBYFU4Nrgicq17Nwu3oWBCs00JuUjWr1Eo">-->
+    <!--</iframe>-->
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="goal-complete-container" ng-controller="GoalCompletedCtrl">
+  <div class="goal-complete-header">
+    <p class="title">{{myMemory.name}}</p>
+    <p class="complete-date">completed: 03/11/2016</p>
+    <p class="bucketlist">in <a ui-sref="view-bucketlist"><b>{{myBucketlist.name}}</b></a></p>
+    <img class="people-icon" src="../images/PeopleIcon.png"/>
+    <p class="members">with {{myMemory.members}}</p>
+    <img class="loc-icon" src="../images/LocationIcon.png"/>
+    <p class="location">in {{myMemory.location}}</p>
+  </div>
+  <div class="goal-complete-content">
+    <div class="main-img">
+      <img src="../images/CCPic.jpg"/>
+    </div>
+    <img class="small-img" src="../images/CCPic2.jpg"/>
+    <img class="small-img" src="../images/CCPic3.jpg"/>
+    <img class="small-img" src="../images/CCPic4.jpg"/>
+    <img class="small-img" src="../images/CCPic5.jpg"/>
+    <p class="desc-title">description:</p>
+    <p class="desc">{{myMemory.desc}}</p>
+    <a ng-click="goalCompleted.deleteMemory(goal.name, goal.description, goal.location)">
+      <img class="delete-goal" src=""/>
+    </a>
+  </div>
+</div>

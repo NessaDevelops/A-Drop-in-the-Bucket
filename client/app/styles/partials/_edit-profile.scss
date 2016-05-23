@@ -1,0 +1,111 @@
+.edit-profile-container {
+  margin-top: 40px;
+
+  .pic-container {
+    margin: 0 auto 0 auto;
+    width: 170px;
+
+    .pic {
+      margin-top: 30px;
+      height: 160px;
+      content: url('../../images/Avatar.jpg');
+    }
+
+    .upload-pic {
+      font-family: 'font-extra-bold';
+      background-color: $second-color;
+      height: 25px;
+      width: 120px;
+      color: $third-color;
+      margin-top: 10px;
+      font-size: 14px;
+      border: none;
+    }
+
+    .trash {
+      margin-left: 5px;
+      width: 25px;
+      content: url('../../images/TrashIcon.png');
+    }
+  }
+
+  .edit-profile-form, .edit-profile-form-2 {
+    width: 600px;
+    color: $second-color;
+    margin: 40px auto 0 auto;
+    font-family: 'font-extra-bold';
+    background-color: rgba($third-color, .4);
+  }
+
+    .edit-profile-header {
+      margin: 0 auto 0 auto;
+      padding-top: 15px;
+      padding-bottom: 10px;
+
+      .basic-info {
+        position: relative;
+        left: 20px;
+      }
+      .public {
+        position: relative;
+        left: 180px;
+      }
+
+    }
+
+    .labels {
+      width: 90px;
+      height: 300px;
+      float: left;
+      margin-left: 10px;
+
+      p {
+        margin-bottom: 35px;
+      }
+    }
+
+    .top, .bottom {
+      width: 400px;
+      margin: 10px auto 0 auto;
+
+      .form-group {
+        width: 360px;
+      }
+      .form-control {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: $form-size;
+        font-family: 'font-reg';
+        width: 350px;
+      }
+      .form-control, button {
+        border: 1px solid $form-color;
+        border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+      }
+      .form-control:focus {
+        -moz-box-shadow: 0 0 8px $primary-color;
+        -webkit-box-shadow: 0 0 8px $primary-color;
+        box-shadow: 0 0 8px $primary-color;
+        border: 1px solid $primary-color;
+      }
+  }
+
+  button {
+    font-family: 'font-extra-bold';
+    background-color: $second-color;
+    height: 30px;
+    width: 300px;
+    color: $third-color;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+
+  .bottom {
+    margin-top: 100px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+}

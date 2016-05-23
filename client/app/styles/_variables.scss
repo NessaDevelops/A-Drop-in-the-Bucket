@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'font-light';
+  src: url('../fonts/Qanelas-UltraLight.ttf');
+}
+@font-face {
+  font-family: 'font-reg';
+  src: url('../fonts/Qanelas-Regular.ttf');
+}
+@font-face {
+  font-family: 'font-extra-bold';
+  src: url('../fonts/Qanelas-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'font-bold';
+  src: url('../fonts/Qanelas-Bold.ttf');
+}
+
+$primary-color:         #39C3E1 !default;
+$second-color:          #fff !default;
+$third-color:           #000 !default;
+$form-color:            #a5a3a4 !default;
+
+$brand-primary:         #404040 !default;
+$brand-success:         #fff !default;
+$brand-info:            #34D0CA !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #F53D54 !default;
+
+$form-size:             16px;
+
+//== Scaffolding
+//
+// ## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #fbfbff !default;
+//** Global text color on `<body>`.
+$text-color:            $third-color !default;
+
+//** Global textual link color.
+$link-color:            $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+

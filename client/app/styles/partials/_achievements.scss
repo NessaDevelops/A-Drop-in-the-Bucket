@@ -1,0 +1,66 @@
+.achievements-container {
+  margin: 200px auto 100px auto;
+  background-color: rgba($second-color, .9);
+  width: 70%;
+  min-width: 800px;
+  max-width: 1100px;
+  padding: 20px 0;
+
+  .achievements-header {
+    font-family: 'font-extra-bold';
+    font-size: 24px;
+  }
+
+  .achievements-content {
+    width: 70%;
+    margin: 10px auto 0 auto;
+
+    .achievement {
+
+      .achievement-top {
+        background-color: $primary-color;
+        height: 30px;
+        padding: 0 15px;
+
+        .achievement-title {
+          width: 50%;
+          float: left;
+          margin-top: 5px;
+          text-align: left;
+          font-family: 'font-bold';
+        }
+
+        .achievement-points {
+          width: 50%;
+          float: right;
+          margin-top: 5px;
+          text-align: right;
+        }
+      }
+
+      .achievement-bottom {
+        background-color: #d1d2d4;
+        margin-bottom: 15px;
+        height: 70px;
+        padding: 10px;
+
+        .achievement-obj {
+          width: 50%;
+          text-align: left;
+        }
+
+        img {
+          width: 35px;
+          float: right;
+          margin-top: -10px;
+        }
+      }
+    }
+
+    .achievement-score {
+      font-family: 'font-extra-bold';
+      text-align: right;
+      margin-top: 30px;
+    }
+  }
+}

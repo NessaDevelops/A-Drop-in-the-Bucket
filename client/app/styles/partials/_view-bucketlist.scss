@@ -1,0 +1,150 @@
+.view-container {
+  padding: 20px 10px 10px 50px;
+  background-color: rgba($second-color, .9);
+  width: 60%;
+  max-width: 1100px;
+  min-width: 900px;
+  margin: 140px auto 100px auto;
+  border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+
+  .view-header {
+    text-align: left;
+
+    p {
+      font-size: 18px;
+
+    }
+
+    .title {
+      font-family: 'font-extra-bold';
+      font-size: 24px;
+    }
+
+    .people-icon {
+      height: 25px;
+      margin: -15px 3px 0 0;
+      content: url('../../images/PeopleIcon.png');
+      float: left;
+    }
+
+    .members {
+      margin: -10px 0 50px 0;
+    }
+
+    .description {
+    }
+  }
+
+  .line-separator {
+    margin: 40px auto 40px 4px;
+    width: 98%;
+    height: 2px;
+    background: #bcbcbc;
+    border-bottom: 1px solid $second-color;
+  }
+
+  .view-content {
+    padding-bottom: 20px;
+
+    .goal {
+      width: 95%;
+      padding: 5px 20px 20px 20px;
+      overflow: hidden;
+      background-color: $second-color;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+      text-align: left;
+      margin-bottom: 30px;
+
+      .picture {
+        width: 28%;
+        margin-top: 10px;
+        margin-right: 20px;
+        content: url('../../images/TravelPic4.jpg');
+        float: left;
+      }
+
+      .goal-info {
+        margin-top: -10px;
+        width: 95%;
+
+        .goal-title {
+          font-family: 'font-extra-bold';
+          font-size: 18px;
+        }
+
+        .loc-icon {
+          width: 25px;
+          margin-top: -15px;
+          content: url('../../images/LocationIcon.png');
+          float: left;
+        }
+
+        .goal-loc {
+          margin-top: -10px;
+          margin-bottom: 35px;
+        }
+
+        .goal-desc {
+          font-size: 14px;
+
+        }
+      }
+
+      .goal-btns {
+        float: right;
+        width: 15%;
+        margin-right: -30px;
+        margin-top: -100px;
+
+        .edit-goal {
+          width: 75%;
+          content: url('../../images/EditIcon.png');
+        }
+
+        .complete-goal {
+          margin-top: 10px;
+          width: 75%;
+          content: url('../../images/CompleteIcon.png');
+        }
+
+        .incomplete-goal {
+          margin-top: 10px;
+          width: 75%;
+          content: url('../../images/IncompleteIcon.png');
+        }
+
+        .view-memory {
+          margin-top: 10px;
+          width: 70%;
+          content: url('../../images/ViewMemoryIcon.png');
+        }
+
+        .delete-goal {
+          float: right;
+          margin-top: 40px;
+          margin-right: 30px;
+          width: 20%;
+          content: url('../../images/TrashIcon.png');
+        }
+      }
+    }
+  }
+
+  .tags {
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .edit-goal {
+    width: 150px;
+    content: url('../../images/EditIcon.png');
+  }
+
+  .trash-icon {
+    height: 80px;
+  }
+}

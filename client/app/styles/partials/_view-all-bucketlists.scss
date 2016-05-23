@@ -1,0 +1,74 @@
+.view-all-container, .browse-container {
+  padding: 10px 0 10px 0;
+  background-color: rgba($second-color, .9);
+  width: 60%;
+  max-width: 1100px;
+  min-width: 800px;
+  margin: 140px auto 0 auto;
+  border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+
+  .view-all-header, .browse-header {
+
+    p {
+      font-family: 'font-extra-bold';
+      font-size: 18px;
+    }
+  }
+
+  .view-all-content, .browse-content {
+    margin: 20px 0;
+
+    .bucketlist {
+      margin: 30px;
+      padding: 0px 1px 5px 8px;
+      width: 30%;
+      background-color: $second-color;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+      text-align: left;
+    }
+
+    .bucketlist-title {
+      color: $primary-color;
+      font-family: 'font-extra-bold';
+      font-size: 17px;
+      padding-top: 5px;
+    }
+
+    .people-icon {
+      height: 20px;
+      margin: -10px 3px 0 0;
+      content: url('../../images/PeopleIcon.png');
+      float: left;
+    }
+
+    .members {
+      font-size: 14px;
+      margin: -10px 0 0 0;
+    }
+
+    .main-pic {
+      width: 97%;
+      margin-top: 10px;
+      content: url('../../images/TravelPic4.jpg');
+    }
+
+    .second-pic {
+      width: 47.5%;
+      margin-right: 1px;
+      content: url('../../images/TravelPic3.jpg');
+    }
+
+    .third-pic {
+      width: 47.5%;
+      content: url('../../images/TravelPic.jpg');
+    }
+
+    .tags {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<div class="create-memory-container" ng-controller="CreateMemoryCtrl">
+  <div class="create-memory-form">
+    <form>
+      <div class="form-group">
+        <input id="location" name="location" ng-model="createMemory.memory.location" type="text" placeholder="location" class="form-control">
+      </div>
+      <div class="form-group">
+        <input id="members" name="members" ng-model="createMemory.memory.members" type="text" placeholder="members" class="form-control">
+      </div>
+      <div class="form-group">
+        <textarea id="description" name="description" ng-model="createMemory.memory.description" type="text-area" placeholder="description" class="form-control"></textarea>
+      </div>
+      <div class="form-group" id="upload-image-container">
+        <input id="upload-memory-image" type="file" name="image" multiple accept="image/*"/>
+      </div>
+      <div class="selected-files"></div>
+      <div class="form-group">
+        <button ng-click="createMemory.submit()" id="createMemory" name="createMemory" class="btn btn-success btn-block">create memory</button>
+      </div>
+    </form>
+  </div>
+</div>
