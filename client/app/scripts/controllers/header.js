@@ -1,14 +1,8 @@
 'use strict';
 
-app.controller('HeaderCtrl', function ($scope, $rootScope, $window) {
+app.controller('HeaderCtrl', function ($scope, $rootScope, $window, $http) {
 
-  this.awesomeThings = [
-    'HTML5 Boilerplate',
-    'AngularJS',
-    'Karma'
-  ];
-
-  var header;
+  var header, user, getUser;
 
   $scope.header = header = {};
 
@@ -17,8 +11,25 @@ app.controller('HeaderCtrl', function ($scope, $rootScope, $window) {
   header.logout = function() {
     console.log(localStorage.getItem("loggedIn"));
     localStorage.setItem("loggedIn", false);
-    localStorage.setItem("user", null);
     console.log("Logged in status: " + localStorage.getItem("loggedIn"));
     console.log("user: " + localStorage.getItem("user"));
+
+    getUser = localStorage.getItem("user");
+    $scope.myUser = JSON.parse(getUser);
+
+    console.log($scope.myUser);
+
+    var request = $http.post('/editUser', $scope.myUser);
+
+    request.success(function (data) {
+      console.log(data);
+      localStorage.setItem("user", null);
+      console.log('here2');
+    });
+
+    request.error(function (data) {
+      console.log(data);
+      console.log('there2');
+    })
   }
 });

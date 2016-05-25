@@ -69,7 +69,7 @@
 
           .bucketlist {
             margin: 40px 20px 30px 20px;
-            padding: 0px 1px 5px 8px;
+            padding: 0 1px 5px 8px;
             width: 30%;
             background-color: #e6e6e6;
             border-radius: 4px 4px 4px 4px;
@@ -110,6 +110,46 @@
               content: url('../../images/MemoryIcon.png');
               height: 20px;
             }
+        }
+
+        .section-content {
+
+          .memory {
+            margin: 40px 20px 30px 20px;
+            padding: 0 1px 5px 8px;
+            width: 30%;
+            background-color: #e6e6e6;
+            border-radius: 4px 4px 4px 4px;
+            -moz-border-radius: 4px 4px 4px 4px;
+            -webkit-border-radius: 4px 4px 4px 4px;
+            text-align: left;
+          }
+
+          .memory-title {
+            color: $primary-color;
+            font-family: 'font-extra-bold';
+            font-size: 17px;
+            padding-top: 5px;
+          }
+
+          .memory-bucketlist {
+            color: $primary-color;
+            font-family: 'font-extra-bold';
+            font-size: 17px;
+            padding-top: 5px;
+          }
+
+          .main-pic {
+            width: 97%;
+            margin-top: -10px;
+          }
+
+          .memory-location {
+            color: $primary-color;
+            font-family: 'font-extra-bold';
+            font-size: 17px;
+            padding-top: 5px;
+          }
         }
       }
 

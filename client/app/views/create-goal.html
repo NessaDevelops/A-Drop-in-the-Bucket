@@ -8,10 +8,11 @@
         <input id="location" name="location" ng-model="createGoal.goal.location" type="text" placeholder="location" class="form-control">
       </div>
       <div class="form-group">
-        <textarea id="description" name="description" ng-model="createGoal.goal.description" type="text-area" placeholder="description" class="form-control"></textarea>
+        <textarea id="description" name="description" ng-model="createGoal.goal.description" placeholder="description" class="form-control"></textarea>
       </div>
       <div class="form-group" id="upload-image-container">
-        <input id="upload-goal-image" type="file" name="image" multiple accept="image/*"/>
+        <input type="file" id="upload-goal-image" name="image" multiple accept="image/*"/>
+        <!--<img ng-src="createGoal.goal.image" class="thumb">-->
       </div>
       <div class="selected-files"></div>
       <div class="form-group">

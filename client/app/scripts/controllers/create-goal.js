@@ -34,6 +34,7 @@ angular.module('clientApp')
       goal.bucketlist = $scope.myBucketlist.name;
       goal.owner = $scope.myUser.username;
       console.log(goal);
+      console.log(goal.image);
 
       var request = $http.post('/createGoal', goal);
 

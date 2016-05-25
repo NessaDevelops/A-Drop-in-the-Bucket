@@ -42,7 +42,7 @@ router.post('/', function (req, res) {
         }
 
         if (memories) {
-            console.log(Memories);
+            console.log(memories);
             Memories.update({'name':body.oldName}, {
                 'name':body.name,
                 'members':body.members,

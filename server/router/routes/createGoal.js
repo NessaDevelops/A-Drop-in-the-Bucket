@@ -10,12 +10,13 @@ var db = require('../../database');
 var Goals = db.goals;
 
 router.post('/', function (req, res) {
-    console.log('wtf');
 
     var body = req.body;
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
 
     console.log('Creating a new goal at ' + color.green(time) + ' with the name: ' + color.green(body.name));
+
+    console.log('image: '+body.image);
 
     var newGoal = new Goals({
         name: body.name,
@@ -23,7 +24,7 @@ router.post('/', function (req, res) {
         bucketlist: body.bucketlist,
         location: body.location,
         description: body.description,
-        images: 'Placeholder'
+        images: body.image
     });
 
     newGoal.save(function (err, savedGoal) {

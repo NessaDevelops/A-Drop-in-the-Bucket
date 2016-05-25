@@ -30,7 +30,15 @@
         <div class="section-header">
           <img src=""/>
           <p>my memories</p>
-          <a ui-sref="home">view all</a>
+          <a ui-sref="memory-album">view all</a>
+        </div>
+        <div class="section-content">
+          <div ng-click="viewAllBucketlists.change(bucketlist.name)" ng-repeat="bucketlist in myBucketlists" class="memory">
+            <p class="memory-title">{{bucketlist.name}}</p>
+            <p class="memory-bucketlist">{{bucketlist.name}}</p>
+            <img class="main-pic" src="../images/TravelPic.jpg"/>
+            <p class="memory-location">{{bucketlist.name}}</p>
+          </div>
         </div>
       </div>
       <div class="my-achievements">

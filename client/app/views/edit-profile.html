@@ -21,10 +21,10 @@
         <input id="email" name="email" ng-model="editProfile.user.email" type="text" value="thuganomix@yahoo.com" class="form-control">
       </div>
       <div class="form-group">
-        <input id="first-name" name="first-name" ng-model="editProfile.firstName.location" type="text" value="Chris" class="form-control">
+        <input id="first-name" name="first-name" ng-model="editProfile.user.firstName" type="text" value="Chris" class="form-control">
       </div>
       <div class="form-group">
-        <input id="last-name" name="last-name" ng-model="editProfile.lastName.location" type="text" value="Matthews" class="form-control">
+        <input id="last-name" name="last-name" ng-model="editProfile.user.lastName" type="text" value="Matthews" class="form-control">
       </div>
       <div class="form-group">
         <select name="gender">
@@ -32,22 +32,7 @@
           <option value="female">Female</option>
         </select>
         <div class="form-group">
-          <select name="month">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select name="day">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select name="year">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
+          <input id="dob" ng-model="editProfile.user.dob" type="date" name="dob">
         </div>
       </div>
       <div class="form-group">

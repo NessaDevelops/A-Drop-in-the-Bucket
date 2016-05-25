@@ -48,7 +48,7 @@ router.post('/', function (req, res) {
 
         if (users) {
             console.log(users);
-            Users.update({'name':body.username}, {
+            Users.update({'username':body.username}, {
                 'firstName':body.firstName,
                 'lastName':body.lastName,
                 'email':body.email,

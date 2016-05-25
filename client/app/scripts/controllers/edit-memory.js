@@ -49,6 +49,5 @@ angular.module('clientApp')
         console.log(data);
         console.log('there2');
       })
-
     };
   });

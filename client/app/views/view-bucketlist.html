@@ -1,57 +1,5 @@
 <script type="text/javascript">
   console.log('here we r pls');
-
-  //Set up a click handler
-  OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
-    defaultHandlerOptions: {
-      'single': true,
-      'double': false,
-      'pixelTolerance': 0,
-      'stopSingle': false,
-      'stopDouble': false
-    },
-
-    initialize: function(options) {
-      this.handlerOptions = OpenLayers.Util.extend(
-        {}, this.defaultHandlerOptions
-      );
-      OpenLayers.Control.prototype.initialize.apply(
-        this, arguments
-      );
-      this.handler = new OpenLayers.Handler.Click(
-        this, {
-          'click': this.trigger
-        }, this.handlerOptions
-      );
-    },
-
-    trigger: function(e) {
-      //A click happened!
-      var lonlat = map.getLonLatFromViewPortPx(e.xy)
-
-      lonlat.transform(
-        new OpenLayers.Projection("EPSG:900913"),
-        new OpenLayers.Projection("EPSG:4326")
-      );
-
-      alert("You clicked near " + lonlat.lat + " N, " +
-        + lonlat.lon + " E");
-    }
-  });
-
-  var map;
-  function init(){
-    console.log('CUM HERE');
-    map = new OpenLayers.Map('mapdiv');
-
-    map.addLayer(new OpenLayers.Layer.OSM());
-    map.zoomToMaxExtent();
-
-    var click = new OpenLayers.Control.Click();
-    map.addControl(click);
-    click.activate();
-
-  }
 </script>
 
 <div class="view-container" ng-controller="ViewBucketlistCtrl">
@@ -118,6 +66,8 @@
   </div>
   <div id="mapdiv"></div>
   <script type="text/javascript">
-    init();
+
   </script>
+  {{viewBucketlist.getMapLocation()}}
+  {{viewBucketlist.init()}}
 </div>
