@@ -11,9 +11,7 @@ var db = require('../../database');
 var Memories = db.memories;
 
 router.post('/', function (req, res) {
-
-    console.log('GET HERRR');
-
+    
     var body = req.body;
 
     console.log(body.owner);

@@ -12,11 +12,11 @@ var Bucketlists = db.bucketlists;
 
 router.post('/', function (req, res) {
 
-    console.log('did we even come here');
+    // console.log('did we even come here');
 
     var body = req.body;
 
-    console.log(body.username);
+    // console.log(body.username);
 
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
 

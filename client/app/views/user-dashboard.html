@@ -18,7 +18,7 @@
           <a ui-sref="view-all-bucketlists">view all</a>
         </div>
         <div class="section-content">
-          <div ng-click="viewAllBucketlists.change(bucketlist.name)" ng-repeat="bucketlist in myBucketlists" class="bucketlist">
+          <div style="cursor: pointer" ng-click="userDash.changeBucketlist(bucketlist.name, bucketlist.owner, bucketlist.members, bucketlist.description, bucketlist.tags)" ng-repeat="bucketlist in myBucketlists" class="bucketlist">
             <p class="bucketlist-title">{{bucketlist.name}}</p>
             <img class="main-pic" src="../images/TravelPic.jpg"/>
             <img class="second-pic" src="../images/TravelPic3.jpg"/>
@@ -33,11 +33,11 @@
           <a ui-sref="memory-album">view all</a>
         </div>
         <div class="section-content">
-          <div ng-click="viewAllBucketlists.change(bucketlist.name)" ng-repeat="bucketlist in myBucketlists" class="memory">
-            <p class="memory-title">{{bucketlist.name}}</p>
-            <p class="memory-bucketlist">{{bucketlist.name}}</p>
+          <div style="cursor: pointer" ng-click="userDash.changeMemory(memory.name, memory.bucketlist, memory.location, memory.description, memory.owner, memory.members)" ng-repeat="memory in myMemories" class="memory">
+            <p class="memory-title">{{memory.name}}</p>
+            <p class="memory-bucketlist">{{memory.bucketlist}}</p>
             <img class="main-pic" src="../images/TravelPic.jpg"/>
-            <p class="memory-location">{{bucketlist.name}}</p>
+            <p class="memory-location">{{memory.location}}</p>
           </div>
         </div>
       </div>
