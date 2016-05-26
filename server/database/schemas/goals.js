@@ -10,7 +10,7 @@ var goalSchema = new Schema({
     bucketlist: { type: String, required: true},
     location: { type: String, required: false},
     description: { type: String, required: true},
-    images: { type: Buffer, contentType: String, required: false}
+    images: { type: String, required: false}
 
 });
 

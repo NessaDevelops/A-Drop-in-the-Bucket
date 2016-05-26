@@ -12,7 +12,7 @@
   <div class="line-separator"></div>
   <div class="view-content">
     <div class="goal" ng-repeat="memory in myMemories">
-      <img class="picture" src=""/>
+      <img class="picture" id='my-memory-image' src="../images/TravelPic4.jpg"/>
       <div class="goal-info">
         <p class="goal-title">{{memory.name}}</p>
         <img class="loc-icon" src=""/>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="goal" ng-repeat="goal in myGoals">
-      <img class="picture" src=""/>
+      <img class="picture" id='my-goal-image' ng-src="{{goal.images}}"/>
       <div class="goal-info">
         <p class="goal-title">{{goal.name}}</p>
         <img class="loc-icon" src=""/>

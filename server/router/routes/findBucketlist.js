@@ -34,15 +34,15 @@ router.post('/', function (req, res) {
         }
 
         if (!bucketlists) {
-            console.log('not found em');
+            // console.log('not found em');
             res.status(409).json({
                 'message': body.owner + ' has no bucketlists currently created!'
             });
         }
 
         if (bucketlists) {
-            console.log('found em');
-            console.log(bucketlists);
+            // console.log('found em');
+            // console.log(bucketlists);
             res.status(201).json({
                 getBucketlists : bucketlists
             });

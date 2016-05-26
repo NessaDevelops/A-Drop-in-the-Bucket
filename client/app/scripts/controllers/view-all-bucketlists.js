@@ -28,5 +28,4 @@ app.controller('ViewAllBucketlistsCtrl', function ($scope, $rootScope, $http, $w
 
       $window.location.href = '#/view-bucketlist';
     };
-
   });

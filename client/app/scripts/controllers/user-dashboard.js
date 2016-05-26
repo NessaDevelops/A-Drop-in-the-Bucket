@@ -15,7 +15,7 @@ app.controller('UserDashboardCtrl', function ($scope, $rootScope, $http, $window
   user = {};
   user = localStorage.getItem("user");
   $scope.userParse = JSON.parse(user);
-  console.log($scope.userParse);
+  // console.log($scope.userParse);
 
   // console.log("Logged in status: " + localStorage.getItem("loggedIn"));
 
@@ -23,10 +23,10 @@ app.controller('UserDashboardCtrl', function ($scope, $rootScope, $http, $window
 
   request.success(function (data) {
     localStorage.setItem("bucketlists", JSON.stringify(data.getBucketlists));
-    console.log(localStorage.getItem("bucketlists"));
+    // console.log(localStorage.getItem("bucketlists"));
     var getBucketlists = localStorage.getItem("bucketlists");
     $scope.myBucketlists = JSON.parse(getBucketlists);
-    console.log($scope.myBucketlists);
+    // console.log($scope.myBucketlists);
   });
 
   request.error(function (data) {
@@ -40,7 +40,7 @@ app.controller('UserDashboardCtrl', function ($scope, $rootScope, $http, $window
     localStorage.setItem("memories", JSON.stringify(data.getMemories));
     var getMemories = localStorage.getItem("memories");
     $scope.myMemories = JSON.parse(getMemories);
-    console.log($scope.myMemories);
+    // console.log($scope.myMemories);
   });
 
   request2.error(function (data) {

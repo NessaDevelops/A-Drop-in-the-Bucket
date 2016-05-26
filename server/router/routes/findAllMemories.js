@@ -15,7 +15,7 @@ router.post('/', function (req, res) {
     // console.log('GET HERRR');
 
     var body = req.body;
-    console.log('body: '+body);
+    // console.log('body: '+body);
 
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
 
@@ -33,15 +33,15 @@ router.post('/', function (req, res) {
         }
 
         if (!memories) {
-            console.log('not found em');
+            // console.log('not found em');
             res.status(409).json({
                 'message': body.bucketlist + ' has no memories currently created!'
             });
         }
 
         if (memories) {
-            console.log('found em');
-            console.log(memories);
+            // console.log('found em');
+            // console.log(memories);
             res.status(201).json({
                 getMemories : memories
             });

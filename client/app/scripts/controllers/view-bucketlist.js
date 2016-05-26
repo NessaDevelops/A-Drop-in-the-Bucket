@@ -8,7 +8,7 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundPosition = "center";
 
-    var viewBucketlist, bucketlist, getBucketlist, location;
+    var viewBucketlist, bucketlist, getBucketlist, location, getImgData;
 
     $scope.viewBucketlist = viewBucketlist = {};
 
@@ -19,19 +19,29 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
 
     request.success(function (data) {
       $rootScope.goals = data.getGoals;
-      console.log($rootScope.goals);
+      // console.log($rootScope.goals[0]);
+      var imgData = $rootScope.goals[0].images;
+      getImgData = localStorage.getItem(imgData);
+      // console.log("img data: "+getImgData);;
       $scope.myGoals = $rootScope.goals;
+      $scope.myGoals[0].images = getImgData;
+      console.log($scope.myGoals[0].images);
+      // f.src = getImgData;
+      // var f = document.getElementById('my-goal-image').setAttribute("src", getImgData);
+      // console.log(f);
     });
 
     request.error(function (data) {
       console.log(data);
     });
 
+
+
   var request2 = $http.post('/findMemories', $scope.myBucketlist);
 
   request2.success(function (data) {
     $rootScope.memories = data.getMemories;
-    console.log($rootScope.memories);
+    // console.log($rootScope.memories);
     $scope.myMemories = $rootScope.memories;
   });
 
@@ -59,7 +69,7 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
       location: location
     };
 
-    console.log($rootScope.currMemory);
+    // console.log($rootScope.currMemory);
     localStorage.setItem("currMemory", JSON.stringify($rootScope.currMemory));
     $window.location.href = '#/edit-memory';
   };
@@ -84,13 +94,13 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
       location: location
     };
 
-    console.log($rootScope.currMemory);
+    // console.log($rootScope.currMemory);
     localStorage.setItem("currMemory", JSON.stringify($rootScope.currMemory));
     $window.location.href = '#/goal-completed';
   };
 
     viewBucketlist.deleteBucketlist = function () {
-      console.log($scope.myBucketlist);
+      // console.log($scope.myBucketlist);
 
       var request = $http.post('/deleteBucketlist', $scope.myBucketlist);
 
@@ -112,7 +122,7 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
       location: location
     };
 
-    console.log($rootScope.currGoal);
+    // console.log($rootScope.currGoal);
     localStorage.setItem("currGoal", JSON.stringify($rootScope.currGoal));
 
     var request = $http.post('/deleteGoal', $rootScope.currGoal);
@@ -136,7 +146,7 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
       location: location
     };
 
-    console.log($rootScope.currMemory);
+    // console.log($rootScope.currMemory);
     localStorage.setItem("currMemory", JSON.stringify($rootScope.currMemory));
 
     var request = $http.post('/deleteMemory', $rootScope.currMemory);
@@ -153,7 +163,7 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
   };
 
   viewBucketlist.getMapLocation = function () {
-    console.log('hey this is where we get our loc');
+    // console.log('hey this is where we get our loc');
 
     //Set up a click handler
     OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
@@ -237,9 +247,9 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
   var map;
   var mapCreated = false;
   viewBucketlist.init = function (){
-    console.log('CUM HERE: '+mapCreated);
+    // console.log('CUM HERE: '+mapCreated);
     if(mapCreated) {
-      console.log('map alrdy create');
+      // console.log('map alrdy create');
     } else {
       map = new OpenLayers.Map('mapdiv');
 
@@ -251,5 +261,5 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
       click.activate();
       mapCreated = true;
     }
-  }
+  };
   });

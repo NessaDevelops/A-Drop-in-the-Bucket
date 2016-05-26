@@ -9,11 +9,12 @@ angular.module('clientApp')
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundPosition = "center";
 
-    var goal, getUser, getBucketlist, createGoal, myBucketlist, myUser;
+    var goal, getUser, getBucketlist, createGoal, myBucketlist, myUser, imageFile;
 
     $scope.createGoal = createGoal = {};
 
     createGoal.goal = goal = {};
+    imageFile = {};
 
     createGoal.submit = function () {
 
@@ -25,6 +26,11 @@ angular.module('clientApp')
         return false;
       }
 
+      var file = document.getElementById("upload-goal-image").files[0];
+      // console.log(file);
+
+      saveImage(file);
+
       getUser = localStorage.getItem("user");
       $scope.myUser = JSON.parse(getUser);
 
@@ -33,8 +39,8 @@ angular.module('clientApp')
 
       goal.bucketlist = $scope.myBucketlist.name;
       goal.owner = $scope.myUser.username;
+      goal.image = file.name;
       console.log(goal);
-      console.log(goal.image);
 
       var request = $http.post('/createGoal', goal);
 
@@ -49,4 +55,19 @@ angular.module('clientApp')
         console.log('there2');
       })
     };
+
+    function saveImage(file) {
+      imageFile.name = file.name;
+      imageFile.size = file.size;
+      imageFile.type = file.type;
+
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var data = this.result;
+        console.log("data: "+data);
+        localStorage.setItem(file.name, data);
+      };
+      reader.readAsDataURL(file);
+      console.log("file: "+file);
+    }
   });

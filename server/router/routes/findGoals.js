@@ -16,8 +16,8 @@ router.post('/', function (req, res) {
 
     var body = req.body;
 
-    console.log(body.owner);
-    console.log(body.name);
+    // console.log(body.owner);
+    // console.log(body.name);
 
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
 
@@ -43,7 +43,7 @@ router.post('/', function (req, res) {
 
         if (goals) {
             console.log('found em');
-            console.log(goals);
+            // console.log(goals);
             res.status(201).json({
                 getGoals : goals
             });
