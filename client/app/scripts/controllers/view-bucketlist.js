@@ -8,7 +8,7 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundPosition = "center";
 
-    var viewBucketlist, bucketlist, getBucketlist, location, getImgData;
+    var viewBucketlist, bucketlist, getBucketlist, location, getImgData, getImgData2;
 
     $scope.viewBucketlist = viewBucketlist = {};
 
@@ -20,15 +20,12 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
     request.success(function (data) {
       $rootScope.goals = data.getGoals;
       // console.log($rootScope.goals[0]);
-      var imgData = $rootScope.goals[0].images;
-      getImgData = localStorage.getItem(imgData);
-      // console.log("img data: "+getImgData);;
-      $scope.myGoals = $rootScope.goals;
-      $scope.myGoals[0].images = getImgData;
-      console.log($scope.myGoals[0].images);
-      // f.src = getImgData;
-      // var f = document.getElementById('my-goal-image').setAttribute("src", getImgData);
-      // console.log(f);
+      for(var i = 0; i < $rootScope.goals.length; i++) {
+        var imgData = $rootScope.goals[i].images;
+        getImgData = localStorage.getItem(imgData);
+        $scope.myGoals = $rootScope.goals;
+        $scope.myGoals[i].images = getImgData;
+      }
     });
 
     request.error(function (data) {
@@ -42,7 +39,12 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
   request2.success(function (data) {
     $rootScope.memories = data.getMemories;
     // console.log($rootScope.memories);
-    $scope.myMemories = $rootScope.memories;
+    for(var i = 0; i < $rootScope.memories.length; i++) {
+      var imgData = $rootScope.memories[i].images;
+      getImgData2 = localStorage.getItem(imgData);
+      $scope.myMemories = $rootScope.memories;
+      $scope.myMemories[i].images = getImgData2;
+    }
   });
 
   request2.error(function (data) {

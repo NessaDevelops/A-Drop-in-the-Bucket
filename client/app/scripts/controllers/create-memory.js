@@ -9,11 +9,12 @@ angular.module('clientApp')
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundPosition = "center";
 
-    var memory, createMemory, getGoal, getBucketlist, myBucketlist;
+    var memory, createMemory, getGoal, getBucketlist, myBucketlist, imageFile;
 
     $scope.createMemory = createMemory = {};
 
     createMemory.memory = memory = {};
+    imageFile = {};
 
     getGoal = localStorage.getItem("currGoal");
     $scope.myGoal = JSON.parse(getGoal);
@@ -33,10 +34,16 @@ angular.module('clientApp')
         return false;
       }
 
+      var file = document.getElementById("upload-memory-image").files[0];
+      // console.log(file);
+
+      saveImage(file);
+
       console.log($scope.myGoal);
       memory.bucketlist = $scope.myBucketlist.name;
       memory.owner = $scope.myBucketlist.owner;
       memory.name = $scope.myGoal.name;
+      memory.image = file.name;
       console.log(memory);
 
       var request = $http.post('/createMemory', memory);
@@ -53,7 +60,7 @@ angular.module('clientApp')
         request2.error(function (data) {
           console.log(data);
         });
-        
+
         console.log(data); //
         $window.location.href = '#/view-bucketlist';
         console.log('here2');
@@ -64,4 +71,19 @@ angular.module('clientApp')
         console.log('there2');
       })
     };
+
+    function saveImage(file) {
+      imageFile.name = file.name;
+      imageFile.size = file.size;
+      imageFile.type = file.type;
+
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var data = this.result;
+        console.log("data: "+data);
+        localStorage.setItem(file.name, data);
+      };
+      reader.readAsDataURL(file);
+      console.log("file: "+file);
+    }
   });

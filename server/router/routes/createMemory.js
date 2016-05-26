@@ -19,6 +19,8 @@ router.post('/', function (req, res) {
 
     console.log('Creating a new memory at ' + color.green(time) + ' with the name: ' + color.green(body.name));
 
+    console.log('image: '+body.image);
+    
     var newMemory = new Memories({
         name: body.name,
         completeDate: now,
@@ -27,7 +29,7 @@ router.post('/', function (req, res) {
         bucketlist: body.bucketlist,
         location: body.location,
         description: body.description,
-        images: 'Placeholder'
+        images: body.image
     });
 
     newMemory.save(function (err, savedMemory) {

@@ -34,7 +34,7 @@ angular.module('clientApp')
       memory.owner = $scope.myUser.username;
       memory.oldName = $scope.myMemory.name;
 
-      console.log($scope.myMemory);
+      // console.log($scope.myMemory);
       console.log(memory);
 
       var request = $http.post('/editMemory', memory);
