@@ -10,6 +10,7 @@ var routes = require('./router/index');
 var users = require('./router/routes/users');
 var bucketlists = require('./router/routes/bucketlists');
 var goals = require('./router/routes/goals');
+// var staticGoals = require('./router/routes/staticGoals');
 // var memories = require('./router/routes/memories');
 
 var app = express();

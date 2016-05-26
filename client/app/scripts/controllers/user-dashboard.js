@@ -8,14 +8,14 @@ app.controller('UserDashboardCtrl', function ($scope, $rootScope, $http, $window
   document.body.style.backgroundAttachment = "fixed";
   document.body.style.backgroundPosition = "center";
 
-  var userDash, user;
+  var userDash, user, getImgData;
 
   $scope.userDash = userDash = {};
 
   user = {};
   user = localStorage.getItem("user");
   $scope.userParse = JSON.parse(user);
-  // console.log($scope.userParse);
+  console.log($scope.userParse);
 
   // console.log("Logged in status: " + localStorage.getItem("loggedIn"));
 
@@ -40,6 +40,11 @@ app.controller('UserDashboardCtrl', function ($scope, $rootScope, $http, $window
     localStorage.setItem("memories", JSON.stringify(data.getMemories));
     var getMemories = localStorage.getItem("memories");
     $scope.myMemories = JSON.parse(getMemories);
+    for(var i = 0; i < data.getMemories.length; i++) {
+      var imgData = $scope.myMemories[i].images;
+      getImgData = localStorage.getItem(imgData);
+      $scope.myMemories[i].images = getImgData;
+    };
     // console.log($scope.myMemories);
   });
 

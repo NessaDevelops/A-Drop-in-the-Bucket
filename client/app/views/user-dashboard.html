@@ -36,7 +36,7 @@
           <div style="cursor: pointer" ng-click="userDash.changeMemory(memory.name, memory.bucketlist, memory.location, memory.description, memory.owner, memory.members)" ng-repeat="memory in myMemories" class="memory">
             <p class="memory-title">{{memory.name}}</p>
             <p class="memory-bucketlist">{{memory.bucketlist}}</p>
-            <img class="main-pic" src="../images/TravelPic.jpg"/>
+            <img class="main-pic" ng-src="{{memory.images}}"/>
             <p class="memory-location">{{memory.location}}</p>
           </div>
         </div>

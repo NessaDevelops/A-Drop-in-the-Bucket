@@ -15,4 +15,5 @@ module.exports = function (app) {
     app.use('/deleteBucketlist', require('./routes/deleteBucketlist'));
     app.use('/deleteGoal', require('./routes/deleteGoal'));
     app.use('/deleteMemory', require('./routes/deleteMemory'));
+    app.use('/addStaticGoals', require('./routes/addStaticGoals'));
 };

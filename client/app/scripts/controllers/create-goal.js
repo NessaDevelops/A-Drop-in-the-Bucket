@@ -18,6 +18,24 @@ angular.module('clientApp')
 
     createGoal.submit = function () {
 
+      var book = {
+        price: 13,
+        pages: 500,
+        pricePerPage: this.price / this.pages
+      };
+
+      // var request3 = $http.post('/addStaticGoals', book);
+      //
+      // request3.success(function (data) {
+      //   console.log(data);
+      //   console.log('here');
+      // });
+      //
+      // request3.error(function (data) {
+      //   console.log(data);
+      //   console.log('there');
+      // });
+
       if (
         !goal.name ||
         !goal.description

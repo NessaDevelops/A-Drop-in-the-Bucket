@@ -8,9 +8,8 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('HomeCtrl', function () {
+  .controller('HomeCtrl', function ($http, $scope) {
 
     document.body.style.backgroundImage = "none";
     
-
   });
