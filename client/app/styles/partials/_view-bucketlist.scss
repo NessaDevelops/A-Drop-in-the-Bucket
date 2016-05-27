@@ -89,7 +89,6 @@
 
         .goal-desc {
           font-size: 14px;
-
         }
       }
 
@@ -145,5 +144,61 @@
 
   .trash-icon {
     height: 80px;
+  }
+
+  .map-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    #mapdiv {
+      width: 100%;
+      height: 600px;
+    }
+  }
+
+  .static-goal-container {
+    margin-top:30px;
+
+    .static-goal {
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      padding: 5px 20px 20px 20px;
+      overflow: hidden;
+      background-color: $second-color;
+      border-radius: 4px 4px 4px 4px;
+      -moz-border-radius: 4px 4px 4px 4px;
+      -webkit-border-radius: 4px 4px 4px 4px;
+      text-align: left;
+      margin-bottom: 30px;
+
+      .picture {
+        width: 20%;
+        margin-top: 10px;
+        margin-right: 20px;
+        float: left;
+      }
+
+      .static-goal-info {
+
+        .static-goal-title {
+          font-family: 'font-extra-bold';
+          font-size: 18px;
+        }
+
+        .loc-icon {
+          width: 25px;
+          margin-top: -15px;
+          content: url('../../images/LocationIcon.png');
+          float: left;
+        }
+
+        .static-goal-loc {
+          margin-top: -10px;
+          margin-bottom: 35px;
+        }
+      }
+    }
   }
 }

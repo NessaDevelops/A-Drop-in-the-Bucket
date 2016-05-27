@@ -234,7 +234,7 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
           location = 'Canada';
           console.log(location);
         } else if(30 > lonlat.lat && lonlat.lat > 8 && lonlat.lon > -114 && lonlat.lon < -87) {
-          location = 'Central America & Mexico';
+          location = 'Central America';
           console.log(location);
         } else if(49 > lonlat.lat && lonlat.lat > 30 && lonlat.lon > -124 && lonlat.lon < -67) {
           location = 'United States';
@@ -242,6 +242,31 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
         } else {
           location = 'Ocean';
           console.log(location);
+        }
+
+        $scope.myBucketlist.continent = location;
+
+        console.log($scope.myBucketlist);
+        if(location != 'Ocean') {
+          var request = $http.post('/findStaticGoals', $scope.myBucketlist);
+
+          request.success(function (data) {
+            console.log(data);
+            localStorage.setItem("staticGoals", JSON.stringify(data.getGoals));
+            var getStaticGoals;
+            getStaticGoals = localStorage.getItem("staticGoals");
+            $scope.myStaticGoals = JSON.parse(getStaticGoals);
+
+            for(var i = 0; i < $scope.myStaticGoals.length; i++) {
+              var tempImg = $scope.myStaticGoals[i].images;
+              $scope.myStaticGoals[i].images = "../images/PremadeGoalImages/"+tempImg;
+              // console.log($scope.myStaticGoals[i].images);
+            }
+          });
+
+          request.error(function (data) {
+            console.log(data);
+          });
         }
       }
     });

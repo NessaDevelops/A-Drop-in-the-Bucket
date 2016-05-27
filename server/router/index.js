@@ -10,6 +10,7 @@ module.exports = function (app) {
     app.use('/editMemory', require('./routes/editMemory'));
     app.use('/editUser', require('./routes/editUser'));
     app.use('/findGoals', require('./routes/findGoals'));
+    app.use('/findStaticGoals', require('./routes/findStaticGoals'));
     app.use('/findMemories', require('./routes/findMemories'));
     app.use('/findAllMemories', require('./routes/findAllMemories'));
     app.use('/deleteBucketlist', require('./routes/deleteBucketlist'));
