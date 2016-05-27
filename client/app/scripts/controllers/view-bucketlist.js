@@ -213,16 +213,16 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
           location = 'Europe';
           console.log(location);
         } else if(83 > lonlat.lat && lonlat.lat > 60 && lonlat.lon > -72 && lonlat.lon < -13) {
-          location = 'Europe2';
+          location = 'Europe';
           console.log(location);
         } else if(80 > lonlat.lat && lonlat.lat > 76 && lonlat.lon > 10 && lonlat.lon < 27) {
-          location = 'Europe3';
+          location = 'Europe';
           console.log(location);
         } else if(-11 > lonlat.lat && lonlat.lat > -38 && lonlat.lon > 112 && lonlat.lon < 153) {
-          location = 'Austrailia';
+          location = 'Australia';
           console.log(location);
         } else if(-35 > lonlat.lat && lonlat.lat > -46 && lonlat.lon > 166 && lonlat.lon < 177) {
-          location = 'Austrailia2';
+          location = 'Australia';
           console.log(location);
         } else if(-66 > lonlat.lat && lonlat.lat > -85) {
           location = 'Antarctica';
