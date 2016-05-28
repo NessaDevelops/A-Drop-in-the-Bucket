@@ -9,7 +9,7 @@ var goalSchema = new Schema({
     owner: { type: String, required: true },
     bucketlist: { type: String, required: true},
     location: { type: String, required: false},
-    description: { type: String, required: true},
+    description: { type: String, required: false},
     images: { type: String, required: false}
 
 });

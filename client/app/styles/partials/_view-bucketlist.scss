@@ -199,6 +199,14 @@
           margin-bottom: 35px;
         }
       }
+
+      .add-stat-goal {
+        height: 35px;
+        margin: 10px 10px 0 0;
+        content: url('../../images/AddIcon.png');
+        float: right;
+        cursor: pointer;
+      }
     }
   }
 }

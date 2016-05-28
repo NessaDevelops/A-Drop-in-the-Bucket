@@ -75,6 +75,7 @@ angular.module('clientApp')
     };
 
     function saveImage(file) {
+      console.log("PLEASE HERE:   "+file);
       imageFile.name = file.name;
       imageFile.size = file.size;
       imageFile.type = file.type;
@@ -82,7 +83,7 @@ angular.module('clientApp')
       var reader = new FileReader();
       reader.onload = function (e) {
         var data = this.result;
-        console.log("data: "+data);
+        // console.log("data: "+data);
         localStorage.setItem(file.name, data);
       };
       reader.readAsDataURL(file);

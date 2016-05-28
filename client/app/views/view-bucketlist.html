@@ -67,9 +67,6 @@
   <div class="map-container">
     <div id="mapdiv"></div>
   </div>
-  <script type="text/javascript">
-
-  </script>
   {{viewBucketlist.getMapLocation()}}
   {{viewBucketlist.init()}}
   <div class="static-goal-container">
@@ -80,6 +77,9 @@
         <img class="loc-icon" src=""/>
         <p class="static-goal-loc">{{goal.location}}</p>
       </div>
+      <a ng-click="viewBucketlist.addStaticGoal(goal.name, goal.location, goal.images)">
+        <img class="add-stat-goal" src=""/>
+      </a>
     </div>
   </div>
 </div>

@@ -8,18 +8,21 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundPosition = "center";
 
-    var viewBucketlist, bucketlist, getBucketlist, location, getImgData, getImgData2;
+    var viewBucketlist, bucketlist, getUser, getBucketlist, location, getImgData, getImgData2;
 
     $scope.viewBucketlist = viewBucketlist = {};
 
     getBucketlist = localStorage.getItem("currBucketlist");
     $scope.myBucketlist = JSON.parse(getBucketlist);
 
+  getUser = localStorage.getItem("user");
+  $scope.myUser = JSON.parse(getUser);
+
     var request = $http.post('/findGoals', $scope.myBucketlist);
 
     request.success(function (data) {
       $rootScope.goals = data.getGoals;
-      // console.log($rootScope.goals[0]);
+      console.log($rootScope.goals);
       for(var i = 0; i < $rootScope.goals.length; i++) {
         var imgData = $rootScope.goals[i].images;
         getImgData = localStorage.getItem(imgData);
@@ -289,4 +292,38 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
       mapCreated = true;
     }
   };
+
+  viewBucketlist.addStaticGoal = function (name, location, image) {
+
+    $scope.myGoal = {
+      name: name,
+      location: location,
+      image: image,
+      description: '',
+      owner: $scope.myUser.username,
+      bucketlist: $scope.myBucketlist.name
+    };
+
+    var realImg = $scope.myGoal.image.split('/')[3];
+
+    $scope.myGoal.image = realImg;
+
+    console.log("show me u here:   "+$scope.myGoal);
+    console.log($scope.myGoal.image);
+
+    localStorage.setItem($scope.myGoal.image, "../images/PremadeGoalImages/"+$scope.myGoal.image);
+
+    var request = $http.post('/createGoal', $scope.myGoal);
+
+    request.success(function (data) {
+      console.log(data); //
+      $window.location.href = '#/user-dashboard';
+      console.log('here2');
+    });
+
+    request.error(function (data) {
+      console.log(data);
+      console.log('there2');
+    })
+  }
   });
