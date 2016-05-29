@@ -11,11 +11,14 @@ module.exports = function (app) {
     app.use('/editUser', require('./routes/editUser'));
     app.use('/findGoals', require('./routes/findGoals'));
     app.use('/findStaticGoals', require('./routes/findStaticGoals'));
+    app.use('/findAllStaticGoals', require('./routes/findAllStaticGoals'));
     app.use('/findMemories', require('./routes/findMemories'));
     app.use('/findAllMemories', require('./routes/findAllMemories'));
+    app.use('/findAchievements', require('./routes/findAchievements'));
     app.use('/deleteBucketlist', require('./routes/deleteBucketlist'));
     app.use('/deleteGoal', require('./routes/deleteGoal'));
     app.use('/deleteMemory', require('./routes/deleteMemory'));
     app.use('/addStaticGoals', require('./routes/addStaticGoals'));
     app.use('/addAchievements', require('./routes/addAchievements'));
+    app.use('/updateAchievement', require('./routes/updateAchievement'));
 };

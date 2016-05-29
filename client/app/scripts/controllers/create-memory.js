@@ -8,6 +8,7 @@ angular.module('clientApp')
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundPosition = "center";
 
     var memory, createMemory, getGoal, getBucketlist, myBucketlist, imageFile;
 
@@ -61,6 +62,8 @@ angular.module('clientApp')
           console.log(data);
         });
 
+        getAchievements();
+
         console.log(data); //
         $window.location.href = '#/view-bucketlist';
         console.log('here2');
@@ -80,10 +83,190 @@ angular.module('clientApp')
       var reader = new FileReader();
       reader.onload = function (e) {
         var data = this.result;
-        console.log("data: "+data);
+        // console.log("data: "+data);
         localStorage.setItem(file.name, data);
       };
       reader.readAsDataURL(file);
-      console.log("file: "+file);
+      // console.log("file: "+file);
+    }
+
+    function getAchievements() {
+
+      var request = $http.post('/findAchievements', $scope.myBucketlist);
+
+      request.success(function (data) {
+        console.log(data);
+        console.log(data.getAchievements);
+
+        localStorage.setItem('achievements', JSON.stringify(data.getAchievements));
+
+        var request2 = $http.post('/findAllStaticGoals', memory);
+
+        request2.success(function (data) {
+          console.log(data);
+          console.log(data.getGoals);
+
+          //If memory is a static goal then do achievement check
+          if(data.getGoals != null && data.getGoals != 'undefined') {
+            localStorage.setItem('currStaticGoal', JSON.stringify(data.getGoals));
+            globalTrotter();
+            globalTrotterElitist();
+          }
+        });
+
+        request2.error(function (data) {
+          console.log(data);
+        });
+      });
+
+      request.error(function (data) {
+        console.log(data);
+      });
+    }
+
+    function globalTrotter() {
+      // localStorage.setItem('completedConts', '');
+      $scope.myAchieves = JSON.parse(localStorage.getItem('achievements'));
+      console.log('what r achieves: '+$scope.myAchieves);
+      var achievement = $scope.myAchieves[0];
+      console.log("achievement name: "+achievement.name);
+
+      if(!achievement.complete) {
+        $scope.myMemory = JSON.parse(localStorage.getItem('currStaticGoal'));
+
+        console.log("mymemory: "+$scope.myMemory[0].name);
+
+        var getCompletedConts = localStorage.getItem('completedConts');
+        if(getCompletedConts === null || getCompletedConts === '') {
+          console.log("its null :(");
+          var completedConts = [];
+          completedConts.push($scope.myMemory[0].continent);
+          console.log(completedConts);
+          localStorage.setItem('completedConts', JSON.stringify(completedConts));
+          updateAchieve(achievement);
+        } else {
+          console.log("its not null :)");
+          $scope.myCompletedConts = JSON.parse(getCompletedConts);
+          console.log("getcompletedconts: "+$scope.myCompletedConts);
+
+          var newConts = [];
+          newConts.push($scope.myCompletedConts);
+          var stay = true;
+          for (var i = 0; i < newConts.length; i++) {
+            console.log(newConts.length);
+            if(newConts.length == 1) {
+              console.log("this cont: " + newConts);
+              console.log("mymem cont: " + $scope.myMemory[0].continent);
+              if (newConts == $scope.myMemory[0].continent) {
+                stay = false;
+              }
+            } else {
+              console.log("this cont: " + newConts[i]);
+              if (stay) {
+                console.log("mymem cont: " + $scope.myMemory[0].continent);
+                if (newConts[i] == $scope.myMemory[0].continent) {
+                  stay = false;
+                }
+              }
+            }
+          }
+          if(stay) {
+            console.log('dont have cont in alrdy');
+            newConts.push($scope.myMemory[0].continent);
+            localStorage.setItem('completedConts', JSON.stringify(newConts));
+            updateAchieve(achievement);
+          }
+        }
+      }
+    }
+
+    function globalTrotterElitist() {
+      $scope.myAchieves = JSON.parse(localStorage.getItem('achievements'));
+      console.log('what r achieves: '+$scope.myAchieves);
+      var achievement = $scope.myAchieves[1];
+      console.log("achievement name: "+achievement.name);
+
+      if(!achievement.complete) {
+        $scope.myMemory = JSON.parse(localStorage.getItem('currStaticGoal'));
+
+        console.log("mymemory: "+$scope.myMemory[0].name);
+
+        var getCompletedConts = localStorage.getItem('completedConts');
+        if(getCompletedConts === null || getCompletedConts === '') {
+          console.log("its null :(");
+          var completedConts = [];
+          completedConts.push($scope.myMemory[0].continent);
+          console.log(completedConts);
+          localStorage.setItem('completedConts', JSON.stringify(completedConts));
+          updateAchieve(achievement);
+        } else {
+          console.log("its not null :)");
+          $scope.myCompletedConts = JSON.parse(getCompletedConts);
+          console.log("getcompletedconts: "+$scope.myCompletedConts);
+
+          var newConts = [];
+          newConts.push($scope.myCompletedConts);
+          var stay = true;
+          for (var i = 0; i < newConts.length; i++) {
+            console.log(newConts.length);
+            if(newConts.length == 1) {
+              console.log("this cont: " + newConts);
+              console.log("mymem cont: " + $scope.myMemory[0].continent);
+              if (newConts == $scope.myMemory[0].continent) {
+                stay = false;
+              }
+            } else {
+              console.log("this cont: " + newConts[i]);
+              if (stay) {
+                console.log("mymem cont: " + $scope.myMemory[0].continent);
+                if (newConts[i] == $scope.myMemory[0].continent) {
+                  stay = false;
+                }
+              }
+            }
+          }
+          if(stay) {
+            console.log('dont have cont in alrdy');
+            newConts.push($scope.myMemory[0].continent);
+            localStorage.setItem('completedConts', JSON.stringify(newConts));
+            updateAchieve(achievement);
+          }
+        }
+      }
+
+    }
+
+    function feedMe() {
+
+    }
+
+    function viking() {
+
+    }
+
+    function justKeepSwimming() {
+
+    }
+
+    function updateAchieve(achievement) {
+      console.log(achievement);
+      console.log(achievement.name);
+      console.log(achievement.goalsCompleted);
+      achievement.goalsCompleted += 1;
+      console.log(achievement.goalsCompleted);
+
+      if(achievement.goalsCompleted === achievement.goalsNeeded) {
+        achievement.complete = true;
+      }
+
+      var request = $http.post('/updateAchievement', achievement);
+
+      request.success(function (data) {
+        console.log(data);
+      });
+
+      request.error(function (data) {
+        console.log(data);
+      });
     }
   });

@@ -11,5 +11,5 @@ angular.module('clientApp')
   .controller('HomeCtrl', function ($http, $scope) {
 
     document.body.style.backgroundImage = "none";
-    
+
   });
