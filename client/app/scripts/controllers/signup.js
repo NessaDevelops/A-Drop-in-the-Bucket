@@ -39,6 +39,17 @@ angular.module('clientApp')
 
       request.success(function (data) {
         console.log(data);
+
+        var request2 = $http.post('/addAchievements', user);
+
+        request2.success(function (data) {
+          console.log(data);
+        });
+
+        request2.error(function (data) {
+          console.log(data);
+        });
+
         $window.location.href = '#/signup-success';
         console.log('here2');
       });
@@ -47,7 +58,5 @@ angular.module('clientApp')
         console.log(data);
         console.log('there2');
       })
-
     };
-
   });

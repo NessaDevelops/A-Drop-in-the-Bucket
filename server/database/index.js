@@ -7,6 +7,7 @@ var BucketlistModel = require('./schemas/bucketlists');
 var GoalModel = require('./schemas/goals');
 var MemoryModel = require('./schemas/memories');
 var StaticGoalModel = require('./schemas/staticGoals');
+var AchievementModel = require('./schemas/achievements');
 
 // Connections
 var developmentDb = 'mongodb://localhost/test';
@@ -49,3 +50,4 @@ exports.bucketlists = BucketlistModel;
 exports.goals = GoalModel;
 exports.memories = MemoryModel;
 exports.staticGoals = StaticGoalModel;
+exports.achievements = AchievementModel;

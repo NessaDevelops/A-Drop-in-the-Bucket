@@ -17,4 +17,5 @@ module.exports = function (app) {
     app.use('/deleteGoal', require('./routes/deleteGoal'));
     app.use('/deleteMemory', require('./routes/deleteMemory'));
     app.use('/addStaticGoals', require('./routes/addStaticGoals'));
+    app.use('/addAchievements', require('./routes/addAchievements'));
 };

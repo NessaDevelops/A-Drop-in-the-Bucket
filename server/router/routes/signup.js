@@ -69,9 +69,7 @@ router.post('/', function (req, res) {
                 'message': body.email + ' already exists!'
             });
         }
-
     });
-
 });
 
 // export the router for usage in our server/router/index.js
