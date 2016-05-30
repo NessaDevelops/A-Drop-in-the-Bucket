@@ -43,8 +43,9 @@
 
       .my-bucketlists, .my-memories, .my-achievements {
         background-color: $second-color;
-        height: 350px;
+        //height: 350px;
         margin-bottom: 10px;
+        padding-bottom: 5px;
       }
 
       .my-bucketlists {
