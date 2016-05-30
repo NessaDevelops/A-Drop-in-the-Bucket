@@ -3,36 +3,16 @@
     <p>achievements</p>
   </div>
   <div class="achievements-content">
-    <div class="achievement">
+    <div class="achievement" ng-repeat="achievement in achievements">
       <div class="achievement-top">
-        <p class="achievement-title">Viking</p>
-        <p class="achievement-points">50 points</p>
+        <p class="achievement-title">{{achievement.name}}</p>
+        <p class="achievement-points">{{achievement.points}}</p>
       </div>
       <div class="achievement-bottom">
-        <p class="achievement-obj">Hike 5 unique mountains</p>
-        <img src="../images/ClearStar.png"/>
+        <p class="achievement-obj">{{achievement.description}}</p>
+        <img ng-src="{{achievement.star}}"/>
       </div>
     </div>
-    <div class="achievement">
-      <div class="achievement-top">
-        <p class="achievement-title">Viking</p>
-        <p class="achievement-points">50 points</p>
-      </div>
-      <div class="achievement-bottom">
-        <p class="achievement-obj">Hike 5 unique mountains</p>
-        <img src="../images/BlueStar.png"/>
-      </div>
-    </div>
-    <div class="achievement">
-      <div class="achievement-top">
-        <p class="achievement-title">Viking</p>
-        <p class="achievement-points">50 points</p>
-      </div>
-      <div class="achievement-bottom">
-        <p class="achievement-obj">Hike 5 unique mountains</p>
-        <img src="../images/ClearStar.png"/>
-      </div>
-    </div>
-    <p class="achievement-score">205 points</p>
+    <p class="achievement-score">{{points}} points</p>
   </div>
 </div>

@@ -712,113 +712,105 @@ router.post('/', function (req, res) {
     ];
 
     canadaGoals = [
-        // {
-        //     name: 'Bungee jump in Wakefield Quebec',
-        //     continent: 'Canada',
-        //     location: 'Quebec, Canada',
-        //     images: 'bungee.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go on a polar bear safari near Churchhill, Manitoba',
-        //     continent: 'Canada',
-        //     location: 'Manitoba, Canada',
-        //     images: 'polarbear.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit the hot springs in the Canadian Rockies',
-        //     continent: 'Canada',
-        //     location: 'Canada',
-        //     images: 'hotsprings.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: true
-        // },
-        // {
-        //     name: 'Visit the wineries of Niagara-on-the-Lake, Ontario',
-        //     continent: 'Canada',
-        //     location: 'Ontario, Canada',
-        //     images: 'wineries.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Spend a night in the Hotel de Glace in Quebec',
-        //     continent: 'Canada',
-        //     location: 'Quebec, Canada',
-        //     images: 'glace.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'White water raft in Banff',
-        //     continent: 'Canada',
-        //     location: 'Alberta, Canada',
-        //     images: 'raft.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: true
-        // },
-        // {
-        //     name: 'Walk over the Capilano Suspension Bridge',
-        //     continent: 'Canada',
-        //     location: 'British Columbia, Canada',
-        //     images: 'capilano.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Kite surf off the Magdalen Islands in Quebec',
-        //     continent: 'Canada',
-        //     location: 'Quebec, Canada',
-        //     images: 'kitesurf.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: true
-        // },
-        // {
-        //     name: 'Skydive in the Saskatchewan',
-        //     continent: 'Canada',
-        //     location: 'Saskatchewan, Canada',
-        //     images: 'skydive.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Zipline through the forests of Whistler, BC',
-        //     continent: 'Canada',
-        //     location: 'British Columbia, Canada',
-        //     images: 'zipline.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Discover the Columbia Ice Fields in Alberta',
-        //     continent: 'Canada',
-        //     location: 'Alberta, Canada',
-        //     images: 'icefields.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // }
-
-
-
-
-
-
-
-
+        {
+            name: 'Bungee jump in Wakefield Quebec',
+            continent: 'Canada',
+            location: 'Quebec, Canada',
+            images: 'bungee.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go on a polar bear safari near Churchhill, Manitoba',
+            continent: 'Canada',
+            location: 'Manitoba, Canada',
+            images: 'polarbear.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit the hot springs in the Canadian Rockies',
+            continent: 'Canada',
+            location: 'Canada',
+            images: 'hotsprings.jpg',
+            feedme: false,
+            viking: false,
+            swimming: true
+        },
+        {
+            name: 'Visit the wineries of Niagara-on-the-Lake, Ontario',
+            continent: 'Canada',
+            location: 'Ontario, Canada',
+            images: 'wineries.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Spend a night in the Hotel de Glace in Quebec',
+            continent: 'Canada',
+            location: 'Quebec, Canada',
+            images: 'glace.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'White water raft in Banff',
+            continent: 'Canada',
+            location: 'Alberta, Canada',
+            images: 'raft.jpg',
+            feedme: false,
+            viking: false,
+            swimming: true
+        },
+        {
+            name: 'Walk over the Capilano Suspension Bridge',
+            continent: 'Canada',
+            location: 'British Columbia, Canada',
+            images: 'capilano.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Kite surf off the Magdalen Islands in Quebec',
+            continent: 'Canada',
+            location: 'Quebec, Canada',
+            images: 'kitesurf.jpg',
+            feedme: false,
+            viking: false,
+            swimming: true
+        },
+        {
+            name: 'Skydive in the Saskatchewan',
+            continent: 'Canada',
+            location: 'Saskatchewan, Canada',
+            images: 'skydive.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Zipline through the forests of Whistler, BC',
+            continent: 'Canada',
+            location: 'British Columbia, Canada',
+            images: 'zipline.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Discover the Columbia Ice Fields in Alberta',
+            continent: 'Canada',
+            location: 'Alberta, Canada',
+            images: 'icefields.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
         {
             name: 'See the Northern Lights in Yellowknife',
             continent: 'Canada',
@@ -867,1020 +859,951 @@ router.post('/', function (req, res) {
     ];
 
     unitedStatesGoals = [
-        // {
-        //     name: 'Visit the Cathedral Caverns',
-        //     continent: 'United States',
-        //     location: 'Alabama, USA',
-        //     images: 'cath.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go to Space Camp at the U.S. Space & Rocket Center',
-        //     continent: 'United States',
-        //     location: 'Alabama, USA',
-        //     images: 'spacecamp.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Watch NASCAR at Talladega',
-        //     continent: 'United States',
-        //     location: 'Alabama, USA',
-        //     images: 'talladega.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'See polar bears at the Arctic National Wildlife Refuge',
-        //     continent: 'United States',
-        //     location: 'Alabama, USA',
-        //     images: 'refuge.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Take a cruise around Alaskas icebergs',
-        //     continent: 'United States',
-        //     location: 'Alaska, USA',
-        //     images: 'cruise.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: true
-        // },
-        // {
-        //     name: 'Marvel at the Northern Lights',
-        //     continent: 'United States',
-        //     location: 'Alaska, USA',
-        //     images: 'nlights.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go on an Arctic Circle Tour',
-        //     continent: 'United States',
-        //     location: 'Alaska, USA',
-        //     images: 'arctic.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Grab a bit at Organ Stop Pizza',
-        //     continent: 'United States',
-        //     location: 'Arizona, USA',
-        //     images: 'organ.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit the Goldfield Ghost Town in Apache Junction',
-        //     continent: 'United States',
-        //     location: 'Arizona, USA',
-        //     images: 'ghosttown.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Spend a night on the floor of the Grand Canyon',
-        //     continent: 'United States',
-        //     location: 'Arizona, USA',
-        //     images: 'floor.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Have fun at Magic Springs and Crystal Falls Water and Theme Park',
-        //     continent: 'United States',
-        //     location: 'Arkansas, USA',
-        //     images: 'magic.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Anthony Chapel in Garvan Woodland Gardens',
-        //     continent: 'United States',
-        //     location: 'Arkansas, USA',
-        //     images: 'chapel.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Walk across the Golden Gate Bridge',
-        //     continent: 'United States',
-        //     location: 'California, USA',
-        //     images: 'goldengate.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Drive State Route 1 through Big Sur',
-        //     continent: 'United States',
-        //     location: 'California, USA',
-        //     images: 'bigsur.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Hollywood',
-        //     continent: 'United States',
-        //     location: 'California, USA',
-        //     images: 'hollywood.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // }
-
-
-
-
-
-
-
-        // {
-        //     name: 'Stroll Venice Beach and the Santa Monica Pier in Los Angeles',
-        //     continent: 'United States',
-        //     location: 'California, USA',
-        //     images: 'pier.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Ride a cable car in San Francisco',
-        //     continent: 'United States',
-        //     location: 'California, USA',
-        //     images: 'cable.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Get hot and bothered in Death Valley',
-        //     continent: 'United States',
-        //     location: 'California, USA',
-        //     images: 'death.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go sandboarding at Great Sand Dunes National Park',
-        //     continent: 'United States',
-        //     location: 'Colorado, USA',
-        //     images: 'sandboard.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Ski Aspen Highlands in Colorado',
-        //     continent: 'United States',
-        //     location: 'Colorado, USA',
-        //     images: 'aspen.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Bungee jump from the Royal Gorge Bridge',
-        //     continent: 'United States',
-        //     location: 'Colorado, USA',
-        //     images: 'royalgorge.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Walk the Rehoboth Beach Boardwalk',
-        //     continent: 'United States',
-        //     location: 'Delaware, USA',
-        //     images: 'rehoboth.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go to Disneyworld',
-        //     continent: 'United States',
-        //     location: 'Florida, USA',
-        //     images: 'disney.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Climb the Shark Valley tower',
-        //     continent: 'United States',
-        //     location: 'Florida, USA',
-        //     images: 'sharkvalley.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Drive from Miami to Key West',
-        //     continent: 'United States',
-        //     location: 'Florida, USA',
-        //     images: 'keywest.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Take a haunted bar tour in the historic section of St. Augustine',
-        //     continent: 'United States',
-        //     location: 'Florida, USA',
-        //     images: 'augustine.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Ride a fan boat in the Everglades',
-        //     continent: 'United States',
-        //     location: 'Florida, USA',
-        //     images: 'fanboat.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Eat at the Olde Pink House in Savannah',
-        //     continent: 'United States',
-        //     location: 'Georgia, USA',
-        //     images: 'oldepink.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit the Civil Rights District',
-        //     continent: 'United States',
-        //     location: 'Georgia, USA',
-        //     images: 'civilrights.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Surf in Hawaii',
-        //     continent: 'United States',
-        //     location: 'Hawaii, USA',
-        //     images: 'surf.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: true
-        // }
-
-
-
-
-
-
-
-
-
-
-
-        // {
-        //     name: 'Climb the Stairway to Heaven',
-        //     continent: 'United States',
-        //     location: 'Hawaii, USA',
-        //     images: 'stairway.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'See the lava flow in Hawaii',
-        //     continent: 'United States',
-        //     location: 'Hawaii, USA',
-        //     images: 'lava.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Take a helicopter tour over Hawaii',
-        //     continent: 'United States',
-        //     location: 'Hawaii, USA',
-        //     images: 'heli.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Have a drink at the top of the Hancock Building',
-        //     continent: 'United States',
-        //     location: 'Illinois, USA',
-        //     images: 'hancock.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Catch a game at Wrigley Field',
-        //     continent: 'United States',
-        //     location: 'Illinois, USA',
-        //     images: 'wrigley.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go to the annual Chicago Blues Festival',
-        //     continent: 'United States',
-        //     location: 'Illinois, USA',
-        //     images: 'blues.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Eat at Ivanhoes',
-        //     continent: 'United States',
-        //     location: 'Indiana, USA',
-        //     images: 'ivan.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Hear the roar of the Indy 500',
-        //     continent: 'United States',
-        //     location: 'Indiana, USA',
-        //     images: 'indy.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit the Butter Cow at the Iowa State Fair',
-        //     continent: 'United States',
-        //     location: 'Iowa, USA',
-        //     images: 'buttercow.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Gellas Diner & Lb. Brewing Co.',
-        //     continent: 'United States',
-        //     location: 'Kansas, USA',
-        //     images: 'gellas.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Drive and drink along the Bourbon Trail',
-        //     continent: 'United States',
-        //     location: 'Kentucky, USA',
-        //     images: 'bourbon.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go to the Kentucky Derby',
-        //     continent: 'United States',
-        //     location: 'Kentucky, USA',
-        //     images: 'derby.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Listen to Jazz in New Orleans',
-        //     continent: 'United States',
-        //     location: 'Louisiana, USA',
-        //     images: 'jazz.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit for Mardi Gras',
-        //     continent: 'United States',
-        //     location: 'Louisiana, USA',
-        //     images: 'mardi.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go to the French Quarter Festival',
-        //     continent: 'United States',
-        //     location: 'Louisiana, USA',
-        //     images: 'french.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // }
-
-
-
-
-
-
-
-
-
-
-
-        // {
-        //     name: 'Get spooked at Myrtles Plantation',
-        //     continent: 'United States',
-        //     location: 'Louisiana, USA',
-        //     images: 'mytyle.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Watch the sunrise on Cadillac Mountain',
-        //     continent: 'United States',
-        //     location: 'Maine, USA',
-        //     images: 'sunrise.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Eat blue crabs on the water in Maryland',
-        //     continent: 'United States',
-        //     location: 'Maryland, USA',
-        //     images: 'bluecrab.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Walk the Freedom Trail in Boston',
-        //     continent: 'United States',
-        //     location: 'Massachusetts, USA',
-        //     images: 'freedomtrail.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Cape Cod',
-        //     continent: 'United States',
-        //     location: 'Massachusetts, USA',
-        //     images: 'capecod.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit the Shinola Store',
-        //     continent: 'United States',
-        //     location: 'Michigan, USA',
-        //     images: 'shinola.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'See a Michigan game at the Big House',
-        //     continent: 'United States',
-        //     location: 'Michigan, USA',
-        //     images: 'bighouse.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Crack open a cold one in Grand Rapids',
-        //     continent: 'United States',
-        //     location: 'Michigan, USA',
-        //     images: 'grand.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Canoe the Boundary Waters',
-        //     continent: 'United States',
-        //     location: 'Minnesota, USA',
-        //     images: 'canoe.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: true
-        // },
-        // {
-        //     name: 'Listen to blues at The Lyric in Oxford',
-        //     continent: 'United States',
-        //     location: 'Mississippi, USA',
-        //     images: 'lyric.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Explore the Ozark Caverns',
-        //     continent: 'United States',
-        //     location: 'Missouri, USA',
-        //     images: 'ozark.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Take the Polar Bear Plunge in Brandon Beach',
-        //     continent: 'United States',
-        //     location: 'Missouri, USA',
-        //     images: 'polarbearplunge.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: true
-        // },
-        // {
-        //     name: 'Drive Going-to-the-Sun-Road',
-        //     continent: 'United States',
-        //     location: 'Montana, USA',
-        //     images: 'goingtosun.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Hike through Glacier National Park',
-        //     continent: 'United States',
-        //     location: 'Montana, USA',
-        //     images: 'glacier.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go to Popcorn Days in North Loup',
-        //     continent: 'United States',
-        //     location: 'Nebraska, USA',
-        //     images: 'popcorn.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // }
-
-
-
-
-
-
-
-
-
-
-
-        // {
-        //     name: 'Gamble in Las Vegas',
-        //     continent: 'United States',
-        //     location: 'Nevada, USA',
-        //     images: 'gamble.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Order a late-night Awful Awful Burger at The Nugget in Reno',
-        //     continent: 'United States',
-        //     location: 'Nevada, USA',
-        //     images: 'awful.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Free your spirit at Burning Man',
-        //     continent: 'United States',
-        //     location: 'Nevada, USA',
-        //     images: 'burning.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Ride a gondola at the Venetian in Las Vegas',
-        //     continent: 'United States',
-        //     location: 'Nevada, USA',
-        //     images: 'gondola.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Add your pumpkin to the wall at the Keene Pumpkin Festival',
-        //     continent: 'United States',
-        //     location: 'New Hampshire, USA',
-        //     images: 'pumpkinwall.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Lincoln Town',
-        //     continent: 'United States',
-        //     location: 'New Hampshire, USA',
-        //     images: 'lincoln.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Climb Barnegat Lighthouse on Long Beach Island',
-        //     continent: 'United States',
-        //     location: 'New Jersey, USA',
-        //     images: 'lighthouse.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Watch a Balloon Glow at the Albuquerque International Balloon Fiesta',
-        //     continent: 'United States',
-        //     location: 'New Mexico, USA',
-        //     images: 'balloon.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Taos Pueblo',
-        //     continent: 'United States',
-        //     location: 'New Mexico, USA',
-        //     images: 'taos.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Ellis Island',
-        //     continent: 'United States',
-        //     location: 'New York, USA',
-        //     images: 'ellis.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go wine (and pie) tasting on Long Islands North Fork',
-        //     continent: 'United States',
-        //     location: 'New York, USA',
-        //     images: 'northfork.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Catch a Broadway Show in New York City',
-        //     continent: 'United States',
-        //     location: 'New York, USA',
-        //     images: 'broadway.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Eat Buffalo wings in Buffalo',
-        //     continent: 'United States',
-        //     location: 'New York, USA',
-        //     images: 'wings.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Feel the mist of Niagara Falls',
-        //     continent: 'United States',
-        //     location: 'New York, USA',
-        //     images: 'niagara.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Have a carriage ride in Central Park',
-        //     continent: 'United States',
-        //     location: 'New York, USA',
-        //     images: 'carriage.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // }
-
-
-
-
-
-
-
-
-
-
-
-        // {
-        //     name: 'Tour the Biltmore Estate',
-        //     continent: 'United States',
-        //     location: 'North Carolina, USA',
-        //     images: 'biltmore.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Chimney Rock',
-        //     continent: 'United States',
-        //     location: 'North Carolina, USA',
-        //     images: 'chimney.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Climb White Butte',
-        //     continent: 'United States',
-        //     location: 'North Dakota, USA',
-        //     images: 'butte.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Graeters Ice Cream',
-        //     continent: 'United States',
-        //     location: 'Ohio, USA',
-        //     images: 'graeter.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Ride the Milennium Force at Cedar Point',
-        //     continent: 'United States',
-        //     location: 'Ohio, USA',
-        //     images: 'force.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Norman Music Festival',
-        //     continent: 'United States',
-        //     location: 'Oklahoma, USA',
-        //     images: 'norman.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Get lost in Powells City of Books',
-        //     continent: 'United States',
-        //     location: 'Oregon, USA',
-        //     images: 'powell.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Hang out on Cannon Beach',
-        //     continent: 'United States',
-        //     location: 'Oregon, USA',
-        //     images: 'cannon.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go to a mud sale in Lancaster County',
-        //     continent: 'United States',
-        //     location: 'Pennsylvania, USA',
-        //     images: 'mudsale.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Pig out at Hersheys Chocolate World',
-        //     continent: 'United States',
-        //     location: 'Pennsylvania, USA',
-        //     images: 'chocolate.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Take the Cliff Walk in Newport',
-        //     continent: 'United States',
-        //     location: 'Rhode Island, USA',
-        //     images: 'cliffwalk.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Taste the barbecue hash at Sweatmans BBQ',
-        //     continent: 'United States',
-        //     location: 'South Carolina, USA',
-        //     images: 'bbq.jpg',
-        //     feedme: true,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit the Mitchell Corn Palace',
-        //     continent: 'United States',
-        //     location: 'South Dakota, USA',
-        //     images: 'cornpalace.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Mount Rushmore',
-        //     continent: 'United States',
-        //     location: 'South Dakota, USA',
-        //     images: 'rushmore.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Spend a day in Dollywood',
-        //     continent: 'United States',
-        //     location: 'Tennessee, USA',
-        //     images: 'dollywood.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // }
-
-
-
-
-
-
-
-
-
-        // {
-        //     name: 'See a show at the Grand Ole Opry in Nashville',
-        //     continent: 'United States',
-        //     location: 'Tennessee, USA',
-        //     images: 'opry.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Lovers Leap in Chattanooga',
-        //     continent: 'United States',
-        //     location: 'Tennessee, USA',
-        //     images: 'loversleap.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Tube at the Guadalupe River',
-        //     continent: 'United States',
-        //     location: 'Texas, USA',
-        //     images: 'tube.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: true
-        // },
-        // {
-        //     name: 'Visit the Alamo in San Antonio',
-        //     continent: 'United States',
-        //     location: 'Texas, USA',
-        //     images: 'alamo.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Build a structure at Texas Sandfest',
-        //     continent: 'United States',
-        //     location: 'Texas, USA',
-        //     images: 'sandfest.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Hike to Delicate Arch',
-        //     continent: 'United States',
-        //     location: 'Utah, USA',
-        //     images: 'arch.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Snowboard in Park City',
-        //     continent: 'United States',
-        //     location: 'Utah, USA',
-        //     images: 'parkcity.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Visit Sundance Film festival',
-        //     continent: 'United States',
-        //     location: 'Utah, USA',
-        //     images: 'sundance.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go to the Clark Planetarium',
-        //     continent: 'United States',
-        //     location: 'Utah, USA',
-        //     images: 'clark.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Take a brewery tour',
-        //     continent: 'United States',
-        //     location: 'Vermont, USA',
-        //     images: 'tour.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'See a movie at the Byrd Theater',
-        //     continent: 'United States',
-        //     location: 'Virginia, USA',
-        //     images: 'byrd.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'See the Lincoln Memorial in Washington DC',
-        //     continent: 'United States',
-        //     location: 'Virginia, USA',
-        //     images: 'memorial.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Go to the Sasquatch! Music Festival',
-        //     continent: 'United States',
-        //     location: 'Washington, USA',
-        //     images: 'sas.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Hike the Ape Caves',
-        //     continent: 'United States',
-        //     location: 'Washington, USA',
-        //     images: 'ape.jpg',
-        //     feedme: false,
-        //     viking: true,
-        //     swimming: false
-        // },
-        // {
-        //     name: 'Watch the fish fly at Pike Place Market',
-        //     continent: 'United States',
-        //     location: 'Washington, USA',
-        //     images: 'pike.jpg',
-        //     feedme: false,
-        //     viking: false,
-        //     swimming: false
-        // }
-
-
-
-
-
-
-
-
-
+        {
+            name: 'Visit the Cathedral Caverns',
+            continent: 'United States',
+            location: 'Alabama, USA',
+            images: 'cath.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go to Space Camp at the U.S. Space & Rocket Center',
+            continent: 'United States',
+            location: 'Alabama, USA',
+            images: 'spacecamp.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Watch NASCAR at Talladega',
+            continent: 'United States',
+            location: 'Alabama, USA',
+            images: 'talladega.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'See polar bears at the Arctic National Wildlife Refuge',
+            continent: 'United States',
+            location: 'Alabama, USA',
+            images: 'refuge.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Take a cruise around Alaskas icebergs',
+            continent: 'United States',
+            location: 'Alaska, USA',
+            images: 'cruise.jpg',
+            feedme: false,
+            viking: false,
+            swimming: true
+        },
+        {
+            name: 'Marvel at the Northern Lights',
+            continent: 'United States',
+            location: 'Alaska, USA',
+            images: 'nlights.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go on an Arctic Circle Tour',
+            continent: 'United States',
+            location: 'Alaska, USA',
+            images: 'arctic.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Grab a bit at Organ Stop Pizza',
+            continent: 'United States',
+            location: 'Arizona, USA',
+            images: 'organ.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit the Goldfield Ghost Town in Apache Junction',
+            continent: 'United States',
+            location: 'Arizona, USA',
+            images: 'ghosttown.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Spend a night on the floor of the Grand Canyon',
+            continent: 'United States',
+            location: 'Arizona, USA',
+            images: 'floor.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Have fun at Magic Springs and Crystal Falls Water and Theme Park',
+            continent: 'United States',
+            location: 'Arkansas, USA',
+            images: 'magic.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Anthony Chapel in Garvan Woodland Gardens',
+            continent: 'United States',
+            location: 'Arkansas, USA',
+            images: 'chapel.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Walk across the Golden Gate Bridge',
+            continent: 'United States',
+            location: 'California, USA',
+            images: 'goldengate.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Drive State Route 1 through Big Sur',
+            continent: 'United States',
+            location: 'California, USA',
+            images: 'bigsur.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Hollywood',
+            continent: 'United States',
+            location: 'California, USA',
+            images: 'hollywood.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Stroll Venice Beach and the Santa Monica Pier in Los Angeles',
+            continent: 'United States',
+            location: 'California, USA',
+            images: 'pier.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Ride a cable car in San Francisco',
+            continent: 'United States',
+            location: 'California, USA',
+            images: 'cable.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Get hot and bothered in Death Valley',
+            continent: 'United States',
+            location: 'California, USA',
+            images: 'death.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Go sandboarding at Great Sand Dunes National Park',
+            continent: 'United States',
+            location: 'Colorado, USA',
+            images: 'sandboard.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Ski Aspen Highlands in Colorado',
+            continent: 'United States',
+            location: 'Colorado, USA',
+            images: 'aspen.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Bungee jump from the Royal Gorge Bridge',
+            continent: 'United States',
+            location: 'Colorado, USA',
+            images: 'royalgorge.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Walk the Rehoboth Beach Boardwalk',
+            continent: 'United States',
+            location: 'Delaware, USA',
+            images: 'rehoboth.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go to Disneyworld',
+            continent: 'United States',
+            location: 'Florida, USA',
+            images: 'disney.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Climb the Shark Valley tower',
+            continent: 'United States',
+            location: 'Florida, USA',
+            images: 'sharkvalley.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Drive from Miami to Key West',
+            continent: 'United States',
+            location: 'Florida, USA',
+            images: 'keywest.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Take a haunted bar tour in the historic section of St. Augustine',
+            continent: 'United States',
+            location: 'Florida, USA',
+            images: 'augustine.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Ride a fan boat in the Everglades',
+            continent: 'United States',
+            location: 'Florida, USA',
+            images: 'fanboat.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Eat at the Olde Pink House in Savannah',
+            continent: 'United States',
+            location: 'Georgia, USA',
+            images: 'oldepink.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit the Civil Rights District',
+            continent: 'United States',
+            location: 'Georgia, USA',
+            images: 'civilrights.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Surf in Hawaii',
+            continent: 'United States',
+            location: 'Hawaii, USA',
+            images: 'surf.jpg',
+            feedme: false,
+            viking: false,
+            swimming: true
+        },
+        {
+            name: 'Climb the Stairway to Heaven',
+            continent: 'United States',
+            location: 'Hawaii, USA',
+            images: 'stairway.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'See the lava flow in Hawaii',
+            continent: 'United States',
+            location: 'Hawaii, USA',
+            images: 'lava.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Take a helicopter tour over Hawaii',
+            continent: 'United States',
+            location: 'Hawaii, USA',
+            images: 'heli.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Have a drink at the top of the Hancock Building',
+            continent: 'United States',
+            location: 'Illinois, USA',
+            images: 'hancock.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Catch a game at Wrigley Field',
+            continent: 'United States',
+            location: 'Illinois, USA',
+            images: 'wrigley.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go to the annual Chicago Blues Festival',
+            continent: 'United States',
+            location: 'Illinois, USA',
+            images: 'blues.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Eat at Ivanhoes',
+            continent: 'United States',
+            location: 'Indiana, USA',
+            images: 'ivan.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Hear the roar of the Indy 500',
+            continent: 'United States',
+            location: 'Indiana, USA',
+            images: 'indy.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit the Butter Cow at the Iowa State Fair',
+            continent: 'United States',
+            location: 'Iowa, USA',
+            images: 'buttercow.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Gellas Diner & Lb. Brewing Co.',
+            continent: 'United States',
+            location: 'Kansas, USA',
+            images: 'gellas.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Drive and drink along the Bourbon Trail',
+            continent: 'United States',
+            location: 'Kentucky, USA',
+            images: 'bourbon.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go to the Kentucky Derby',
+            continent: 'United States',
+            location: 'Kentucky, USA',
+            images: 'derby.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Listen to Jazz in New Orleans',
+            continent: 'United States',
+            location: 'Louisiana, USA',
+            images: 'jazz.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit for Mardi Gras',
+            continent: 'United States',
+            location: 'Louisiana, USA',
+            images: 'mardi.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go to the French Quarter Festival',
+            continent: 'United States',
+            location: 'Louisiana, USA',
+            images: 'french.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Get spooked at Myrtles Plantation',
+            continent: 'United States',
+            location: 'Louisiana, USA',
+            images: 'mytyle.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Watch the sunrise on Cadillac Mountain',
+            continent: 'United States',
+            location: 'Maine, USA',
+            images: 'sunrise.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Eat blue crabs on the water in Maryland',
+            continent: 'United States',
+            location: 'Maryland, USA',
+            images: 'bluecrab.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Walk the Freedom Trail in Boston',
+            continent: 'United States',
+            location: 'Massachusetts, USA',
+            images: 'freedomtrail.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Cape Cod',
+            continent: 'United States',
+            location: 'Massachusetts, USA',
+            images: 'capecod.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit the Shinola Store',
+            continent: 'United States',
+            location: 'Michigan, USA',
+            images: 'shinola.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'See a Michigan game at the Big House',
+            continent: 'United States',
+            location: 'Michigan, USA',
+            images: 'bighouse.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Crack open a cold one in Grand Rapids',
+            continent: 'United States',
+            location: 'Michigan, USA',
+            images: 'grand.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Canoe the Boundary Waters',
+            continent: 'United States',
+            location: 'Minnesota, USA',
+            images: 'canoe.jpg',
+            feedme: false,
+            viking: false,
+            swimming: true
+        },
+        {
+            name: 'Listen to blues at The Lyric in Oxford',
+            continent: 'United States',
+            location: 'Mississippi, USA',
+            images: 'lyric.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Explore the Ozark Caverns',
+            continent: 'United States',
+            location: 'Missouri, USA',
+            images: 'ozark.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Take the Polar Bear Plunge in Brandon Beach',
+            continent: 'United States',
+            location: 'Missouri, USA',
+            images: 'polarbearplunge.jpg',
+            feedme: false,
+            viking: false,
+            swimming: true
+        },
+        {
+            name: 'Drive Going-to-the-Sun-Road',
+            continent: 'United States',
+            location: 'Montana, USA',
+            images: 'goingtosun.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Hike through Glacier National Park',
+            continent: 'United States',
+            location: 'Montana, USA',
+            images: 'glacier.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Go to Popcorn Days in North Loup',
+            continent: 'United States',
+            location: 'Nebraska, USA',
+            images: 'popcorn.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Gamble in Las Vegas',
+            continent: 'United States',
+            location: 'Nevada, USA',
+            images: 'gamble.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Order a late-night Awful Awful Burger at The Nugget in Reno',
+            continent: 'United States',
+            location: 'Nevada, USA',
+            images: 'awful.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Free your spirit at Burning Man',
+            continent: 'United States',
+            location: 'Nevada, USA',
+            images: 'burning.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Ride a gondola at the Venetian in Las Vegas',
+            continent: 'United States',
+            location: 'Nevada, USA',
+            images: 'gondola.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Add your pumpkin to the wall at the Keene Pumpkin Festival',
+            continent: 'United States',
+            location: 'New Hampshire, USA',
+            images: 'pumpkinwall.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Lincoln Town',
+            continent: 'United States',
+            location: 'New Hampshire, USA',
+            images: 'lincoln.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Climb Barnegat Lighthouse on Long Beach Island',
+            continent: 'United States',
+            location: 'New Jersey, USA',
+            images: 'lighthouse.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Watch a Balloon Glow at the Albuquerque International Balloon Fiesta',
+            continent: 'United States',
+            location: 'New Mexico, USA',
+            images: 'balloon.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Taos Pueblo',
+            continent: 'United States',
+            location: 'New Mexico, USA',
+            images: 'taos.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Ellis Island',
+            continent: 'United States',
+            location: 'New York, USA',
+            images: 'ellis.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go wine (and pie) tasting on Long Islands North Fork',
+            continent: 'United States',
+            location: 'New York, USA',
+            images: 'northfork.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Catch a Broadway Show in New York City',
+            continent: 'United States',
+            location: 'New York, USA',
+            images: 'broadway.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Eat Buffalo wings in Buffalo',
+            continent: 'United States',
+            location: 'New York, USA',
+            images: 'wings.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Feel the mist of Niagara Falls',
+            continent: 'United States',
+            location: 'New York, USA',
+            images: 'niagara.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Have a carriage ride in Central Park',
+            continent: 'United States',
+            location: 'New York, USA',
+            images: 'carriage.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Tour the Biltmore Estate',
+            continent: 'United States',
+            location: 'North Carolina, USA',
+            images: 'biltmore.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Chimney Rock',
+            continent: 'United States',
+            location: 'North Carolina, USA',
+            images: 'chimney.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Climb White Butte',
+            continent: 'United States',
+            location: 'North Dakota, USA',
+            images: 'butte.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Visit Graeters Ice Cream',
+            continent: 'United States',
+            location: 'Ohio, USA',
+            images: 'graeter.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Ride the Milennium Force at Cedar Point',
+            continent: 'United States',
+            location: 'Ohio, USA',
+            images: 'force.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Norman Music Festival',
+            continent: 'United States',
+            location: 'Oklahoma, USA',
+            images: 'norman.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Get lost in Powells City of Books',
+            continent: 'United States',
+            location: 'Oregon, USA',
+            images: 'powell.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Hang out on Cannon Beach',
+            continent: 'United States',
+            location: 'Oregon, USA',
+            images: 'cannon.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go to a mud sale in Lancaster County',
+            continent: 'United States',
+            location: 'Pennsylvania, USA',
+            images: 'mudsale.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Pig out at Hersheys Chocolate World',
+            continent: 'United States',
+            location: 'Pennsylvania, USA',
+            images: 'chocolate.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Take the Cliff Walk in Newport',
+            continent: 'United States',
+            location: 'Rhode Island, USA',
+            images: 'cliffwalk.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Taste the barbecue hash at Sweatmans BBQ',
+            continent: 'United States',
+            location: 'South Carolina, USA',
+            images: 'bbq.jpg',
+            feedme: true,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit the Mitchell Corn Palace',
+            continent: 'United States',
+            location: 'South Dakota, USA',
+            images: 'cornpalace.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Mount Rushmore',
+            continent: 'United States',
+            location: 'South Dakota, USA',
+            images: 'rushmore.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Spend a day in Dollywood',
+            continent: 'United States',
+            location: 'Tennessee, USA',
+            images: 'dollywood.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'See a show at the Grand Ole Opry in Nashville',
+            continent: 'United States',
+            location: 'Tennessee, USA',
+            images: 'opry.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Lovers Leap in Chattanooga',
+            continent: 'United States',
+            location: 'Tennessee, USA',
+            images: 'loversleap.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Tube at the Guadalupe River',
+            continent: 'United States',
+            location: 'Texas, USA',
+            images: 'tube.jpg',
+            feedme: false,
+            viking: false,
+            swimming: true
+        },
+        {
+            name: 'Visit the Alamo in San Antonio',
+            continent: 'United States',
+            location: 'Texas, USA',
+            images: 'alamo.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Build a structure at Texas Sandfest',
+            continent: 'United States',
+            location: 'Texas, USA',
+            images: 'sandfest.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Hike to Delicate Arch',
+            continent: 'United States',
+            location: 'Utah, USA',
+            images: 'arch.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Snowboard in Park City',
+            continent: 'United States',
+            location: 'Utah, USA',
+            images: 'parkcity.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Visit Sundance Film festival',
+            continent: 'United States',
+            location: 'Utah, USA',
+            images: 'sundance.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go to the Clark Planetarium',
+            continent: 'United States',
+            location: 'Utah, USA',
+            images: 'clark.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Take a brewery tour',
+            continent: 'United States',
+            location: 'Vermont, USA',
+            images: 'tour.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'See a movie at the Byrd Theater',
+            continent: 'United States',
+            location: 'Virginia, USA',
+            images: 'byrd.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'See the Lincoln Memorial in Washington DC',
+            continent: 'United States',
+            location: 'Virginia, USA',
+            images: 'memorial.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Go to the Sasquatch! Music Festival',
+            continent: 'United States',
+            location: 'Washington, USA',
+            images: 'sas.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
+        {
+            name: 'Hike the Ape Caves',
+            continent: 'United States',
+            location: 'Washington, USA',
+            images: 'ape.jpg',
+            feedme: false,
+            viking: true,
+            swimming: false
+        },
+        {
+            name: 'Watch the fish fly at Pike Place Market',
+            continent: 'United States',
+            location: 'Washington, USA',
+            images: 'pike.jpg',
+            feedme: false,
+            viking: false,
+            swimming: false
+        },
         {
             name: 'Take the Washington State Ferry to Orcas Island',
             continent: 'United States',
@@ -1956,9 +1879,6 @@ router.post('/', function (req, res) {
     ];
 
 
-
-
-
     for (var i = 0; i < asiaGoals.length; i++) {
 
         var newStaticGoal = new StaticGoals({
@@ -1970,7 +1890,7 @@ router.post('/', function (req, res) {
             viking: asiaGoals[i].viking,
             swimming: asiaGoals[i].swimming
         });
-
+    //
     // for (var i = 0; i < centralAmericaGoals.length; i++) {
     //
     //     var newStaticGoal = new StaticGoals({
@@ -1978,11 +1898,11 @@ router.post('/', function (req, res) {
     //         continent: centralAmericaGoals[i].continent,
     //         location: centralAmericaGoals[i].location,
     //         images: centralAmericaGoals[i].images,
-    //         feedme: asiaGoals[i].feedme,
-    //         viking: asiaGoals[i].viking,
-    //         swimming: asiaGoals[i].swimming
+    //         feedme: centralAmericaGoals[i].feedme,
+    //         viking: centralAmericaGoals[i].viking,
+    //         swimming: centralAmericaGoals[i].swimming
     //     });
-
+    //
     // for (var i = 0; i < canadaGoals.length; i++) {
     //
     //     var newStaticGoal = new StaticGoals({
@@ -1990,11 +1910,11 @@ router.post('/', function (req, res) {
     //         continent: canadaGoals[i].continent,
     //         location: canadaGoals[i].location,
     //         images: canadaGoals[i].images,
-    //         feedme: asiaGoals[i].feedme,
-    //         viking: asiaGoals[i].viking,
-    //         swimming: asiaGoals[i].swimming
+    //         feedme: canadaGoals[i].feedme,
+    //         viking: canadaGoals[i].viking,
+    //         swimming: canadaGoals[i].swimming
     //     });
-
+    //
     // for (var i = 0; i < southAmericaGoals.length; i++) {
     //
     //     var newStaticGoal = new StaticGoals({
@@ -2002,11 +1922,11 @@ router.post('/', function (req, res) {
     //         continent: southAmericaGoals[i].continent,
     //         location: southAmericaGoals[i].location,
     //         images: southAmericaGoals[i].images,
-    //         feedme: asiaGoals[i].feedme,
-    //         viking: asiaGoals[i].viking,
-    //         swimming: asiaGoals[i].swimming
+    //         feedme: southAmericaGoals[i].feedme,
+    //         viking: southAmericaGoals[i].viking,
+    //         swimming: southAmericaGoals[i].swimming
     //     });
-
+    //
     // for (var i = 0; i < antarcticaGoals.length; i++) {
     //
     //     var newStaticGoal = new StaticGoals({
@@ -2014,11 +1934,11 @@ router.post('/', function (req, res) {
     //         continent: antarcticaGoals[i].continent,
     //         location: antarcticaGoals[i].location,
     //         images: antarcticaGoals[i].images,
-    //         feedme: asiaGoals[i].feedme,
-    //         viking: asiaGoals[i].viking,
-    //         swimming: asiaGoals[i].swimming
+    //         feedme: antarcticaGoals[i].feedme,
+    //         viking: antarcticaGoals[i].viking,
+    //         swimming: antarcticaGoals[i].swimming
     //     });
-
+    //
     // for (var i = 0; i < australiaGoals.length; i++) {
     //
     //     var newStaticGoal = new StaticGoals({
@@ -2026,11 +1946,11 @@ router.post('/', function (req, res) {
     //         continent: australiaGoals[i].continent,
     //         location: australiaGoals[i].location,
     //         images: australiaGoals[i].images,
-    //         feedme: asiaGoals[i].feedme,
-    //         viking: asiaGoals[i].viking,
-    //         swimming: asiaGoals[i].swimming
+    //         feedme: australiaGoals[i].feedme,
+    //         viking: australiaGoals[i].viking,
+    //         swimming: australiaGoals[i].swimming
     //     });
-
+    //
     // for (var i = 0; i < europeGoals.length; i++) {
     //
     //     var newStaticGoal = new StaticGoals({
@@ -2038,11 +1958,11 @@ router.post('/', function (req, res) {
     //         continent: europeGoals[i].continent,
     //         location: europeGoals[i].location,
     //         images: europeGoals[i].images,
-    //         feedme: asiaGoals[i].feedme,
-    //         viking: asiaGoals[i].viking,
-    //         swimming: asiaGoals[i].swimming
+    //         feedme: europeGoals[i].feedme,
+    //         viking: europeGoals[i].viking,
+    //         swimming: europeGoals[i].swimming
     //     });
-
+    //
     // for (var i = 0; i < unitedStatesGoals.length; i++) {
     //
     //     var newStaticGoal = new StaticGoals({
@@ -2050,9 +1970,9 @@ router.post('/', function (req, res) {
     //         continent: unitedStatesGoals[i].continent,
     //         location: unitedStatesGoals[i].location,
     //         images: unitedStatesGoals[i].images,
-    //         feedme: asiaGoals[i].feedme,
-    //         viking: asiaGoals[i].viking,
-    //         swimming: asiaGoals[i].swimming
+    //         feedme: unitedStatesGoals[i].feedme,
+    //         viking: unitedStatesGoals[i].viking,
+    //         swimming: unitedStatesGoals[i].swimming
     //     });
 
     // for (var i = 0; i < africaGoals.length; i++) {
@@ -2062,9 +1982,9 @@ router.post('/', function (req, res) {
     //         continent: africaGoals[i].continent,
     //         location: africaGoals[i].location,
     //         images: africaGoals[i].images,
-    //         feedme: asiaGoals[i].feedme,
-    //         viking: asiaGoals[i].viking,
-    //         swimming: asiaGoals[i].swimming
+    //         feedme: africaGoals[i].feedme,
+    //         viking: africaGoals[i].viking,
+    //         swimming: africaGoals[i].swimming
     //     });
 
         // console.log("static goal: "+newStaticGoal);

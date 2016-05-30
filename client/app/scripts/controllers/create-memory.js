@@ -111,6 +111,9 @@ angular.module('clientApp')
             localStorage.setItem('currStaticGoal', JSON.stringify(data.getGoals));
             globalTrotter();
             globalTrotterElitist();
+            feedMe();
+            viking();
+            justKeepSwimming();
           }
         });
 
@@ -237,15 +240,55 @@ angular.module('clientApp')
     }
 
     function feedMe() {
+      $scope.myAchieves = JSON.parse(localStorage.getItem('achievements'));
+      console.log('what r achieves: '+$scope.myAchieves);
+      var achievement = $scope.myAchieves[2];
+      console.log("achievement name: "+achievement.name);
+
+      if(!achievement.complete) {
+        $scope.myMemory = JSON.parse(localStorage.getItem('currStaticGoal'));
+
+        console.log("mymemory: "+$scope.myMemory[0].name);
+        console.log("mymemory: "+$scope.myMemory[0].feedme);
+        console.log("mymemory: "+$scope.myMemory[0].viking);
+        console.log("mymemory: "+$scope.myMemory[0].swimming);
+
+        if($scope.myMemory[0].feedme == true) {
+          updateAchieve(achievement);
+        }
+      }
 
     }
 
     function viking() {
+      $scope.myAchieves = JSON.parse(localStorage.getItem('achievements'));
+      console.log('what r achieves: '+$scope.myAchieves);
+      var achievement = $scope.myAchieves[3];
+      console.log("achievement name: "+achievement.name);
+
+      if(!achievement.complete) {
+        $scope.myMemory = JSON.parse(localStorage.getItem('currStaticGoal'));
+
+        if($scope.myMemory[0].viking == true) {
+          updateAchieve(achievement);
+        }
+      }
 
     }
 
     function justKeepSwimming() {
+      $scope.myAchieves = JSON.parse(localStorage.getItem('achievements'));
+      console.log('what r achieves: '+$scope.myAchieves);
+      var achievement = $scope.myAchieves[4];
+      console.log("achievement name: "+achievement.name);
 
+      if(!achievement.complete) {
+        $scope.myMemory = JSON.parse(localStorage.getItem('currStaticGoal'));
+
+        if($scope.myMemory[0].swimming == true) {
+          updateAchieve(achievement);
+        }
+      }
     }
 
     function updateAchieve(achievement) {
