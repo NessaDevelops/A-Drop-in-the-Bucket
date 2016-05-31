@@ -203,8 +203,8 @@ app.controller('ViewBucketlistCtrl', function ($scope, $rootScope, $http, $windo
           new OpenLayers.Projection("EPSG:4326")
         );
 
-        alert("You clicked near " + lonlat.lat + " N, " +
-          + lonlat.lon + " E");
+        // alert("You clicked near " + lonlat.lat + " N, " +
+        //   + lonlat.lon + " E");
 
         if(37 > lonlat.lat && lonlat.lat > -33 && lonlat.lon > -16 && lonlat.lon < 50) {
           location = 'Africa';

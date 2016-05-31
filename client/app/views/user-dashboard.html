@@ -24,6 +24,12 @@
             <img class="second-pic" src="../images/TravelPic3.jpg"/>
             <img class="third-pic" src="../images/TravelPic4.jpg"/>
           </div>
+          <div style="cursor: pointer" ng-click="userDash.changeBucketlist(shared.name, shared.owner, shared.members, shared.description, shared.tags)" ng-repeat="shared in sharedBucks" class="bucketlist">
+            <p class="bucketlist-title">{{shared.name}}</p>
+            <img class="main-pic" src="../images/TravelPic.jpg"/>
+            <img class="second-pic" src="../images/TravelPic3.jpg"/>
+            <img class="third-pic" src="../images/TravelPic4.jpg"/>
+          </div>
         </div>
       </div>
       <div class="my-memories">
@@ -35,7 +41,7 @@
         <div class="section-content">
           <div style="cursor: pointer" ng-click="userDash.changeMemory(memory.name, memory.bucketlist, memory.location, memory.description, memory.owner, memory.members)" ng-repeat="memory in myMemories" class="memory">
             <p class="memory-title">{{memory.name}}</p>
-            <p class="memory-bucketlist">{{memory.bucketlist}}</p>
+            <p class="memory-bucketlist">in {{memory.bucketlist}}</p>
             <img class="main-pic" ng-src="{{memory.images}}"/>
             <p class="memory-location">{{memory.location}}</p>
           </div>
@@ -45,18 +51,19 @@
         <div class="section-header">
           <img src=""/>
           <p>my achievements</p>
-          <a ui-sref="home">view all</a>
+          <a ui-sref="achievements">view all</a>
         </div>
       </div>
-    </div>
-    <div class="friend-feed">
-      <div class="friend-header">
-        <img src=""/>
-        <p>friend activity</p>
-      </div>
-      <div class="friend-activity">
+    <!--</div>-->
+    <!--<div class="friend-feed">-->
+      <!--<div class="friend-header">-->
+        <!--<img src=""/>-->
+        <!--<p>friend activity</p>-->
+      <!--</div>-->
+      <!--<div class="friend-activity">-->
 
-      </div>
-    </div>
+      <!--</div>-->
+    <!--</div>-->
   </div>
+</div>
 </div>

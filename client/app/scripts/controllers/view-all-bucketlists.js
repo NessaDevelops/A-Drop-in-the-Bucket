@@ -15,6 +15,9 @@ app.controller('ViewAllBucketlistsCtrl', function ($scope, $rootScope, $http, $w
     getBucketlists = localStorage.getItem("bucketlists");
     $scope.myBucketlists = JSON.parse(getBucketlists);
 
+  var mySharedBucks = localStorage.getItem('sharedBucketlists');
+  $scope.mySharedBucketlists = JSON.parse(mySharedBucks);
+
     viewAllBucketlists.change = function (name, owner, members, desc, tags) {
       $rootScope.currBucketlist = {
         name : name,

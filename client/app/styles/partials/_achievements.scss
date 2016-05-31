@@ -41,12 +41,17 @@
       .achievement-bottom {
         background-color: #d1d2d4;
         margin-bottom: 15px;
-        height: 70px;
+        height: 110px;
         padding: 10px;
 
-        .achievement-obj {
+        .achievement-obj, .achievement-points {
           width: 50%;
           text-align: left;
+        }
+
+        .achievement-points {
+          font-style: italic;
+          font-size: 14px;
         }
 
         img {

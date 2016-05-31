@@ -3,12 +3,12 @@
     <img class="header-logo" src=",,/../images/BucketlistLogo.png"/>
   </a>
   <a ng-show="loggedIn" ui-sref="login">
-    <img ng-click='header.logout()' class="menu-icon" src=",,/../images/MenuIcon.png"/>
+    <img ng-click='header.logout()' class="menu-icon" src=",,/../images/Logout.png"/>
   </a>
-  <a ng-show="loggedIn" ui-sref="user-dashboard">
-    <img class="dashboard-icon" src=",,/../images/DashboardIcon.png"/>
+  <a ui-sref="user-dashboard">
+    <img ng-show="loggedIn" class="dashboard-icon" src=",,/../images/DashboardIcon.png"/>
   </a>
-  <p>{{loggedIn}}</p>
+  <!--<p>{{loggedIn}}</p>-->
 
   <!--<ul class="nav navbar-nav">-->
   <!--<li class="active"><a href="#/">Home</a></li>-->

@@ -42,7 +42,6 @@ angular.module('clientApp')
       request.error(function (data) {
         console.log(data);
         console.log('there2');
-      })
-
+      });
     };
   });

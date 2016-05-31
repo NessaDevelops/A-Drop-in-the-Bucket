@@ -1,7 +1,7 @@
 .view-all-container, .browse-container {
   padding: 10px 0 10px 0;
   background-color: rgba($second-color, .9);
-  width: 60%;
+  width: 50%;
   max-width: 1100px;
   min-width: 800px;
   margin: 140px auto 0 auto;
@@ -18,17 +18,25 @@
   }
 
   .view-all-content, .browse-content {
+    width: 100%;
     margin: 20px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 200px;
+    display: inline-block;
 
     .bucketlist {
-      margin: 30px;
-      padding: 0px 1px 5px 8px;
-      width: 30%;
+      margin: 16px;
+      padding: 0 1px 5px 8px;
+      width: 28%;
       background-color: $second-color;
       border-radius: 4px 4px 4px 4px;
       -moz-border-radius: 4px 4px 4px 4px;
       -webkit-border-radius: 4px 4px 4px 4px;
       text-align: left;
+      float: left;
     }
 
     .bucketlist-title {

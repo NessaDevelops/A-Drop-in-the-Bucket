@@ -2,11 +2,12 @@
 
 app.controller('HeaderCtrl', function ($scope, $rootScope, $window, $http) {
 
-  var header, user, getUser;
+  var header, user, getUser, loggedIn;
 
   $scope.header = header = {};
 
   $scope.loggedIn = localStorage.getItem("loggedIn");;
+  console.log($scope.loggedIn);
 
   header.logout = function() {
     console.log(localStorage.getItem("loggedIn"));

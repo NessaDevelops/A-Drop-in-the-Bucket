@@ -1,5 +1,5 @@
 .user-dash-container {
-  width: 70%;
+  width: 50%;
   max-width: 1100px;
   min-width: 800px;
   margin: 140px auto 0 auto;
@@ -38,17 +38,17 @@
     width: 100%;
 
     .my-feed {
-      width: 70%;
-      float: left;
+      width: 100%;
 
       .my-bucketlists, .my-memories, .my-achievements {
         background-color: $second-color;
-        //height: 350px;
         margin-bottom: 10px;
         padding-bottom: 5px;
+        min-height: 200px;
       }
 
       .my-bucketlists {
+        width: 100%;
 
         .add-list {
           height: 35px;
@@ -67,16 +67,19 @@
         }
 
         .section-content {
+          width: 100%;
+          display: inline-block;
 
           .bucketlist {
-            margin: 40px 20px 30px 20px;
+            margin: 40px 15px 20px 15px;
             padding: 0 1px 5px 8px;
-            width: 30%;
+            width: 28%;
             background-color: #e6e6e6;
             border-radius: 4px 4px 4px 4px;
             -moz-border-radius: 4px 4px 4px 4px;
             -webkit-border-radius: 4px 4px 4px 4px;
             text-align: left;
+            float: left;
           }
 
           .bucketlist-title {
@@ -103,6 +106,7 @@
       }
 
       .my-memories {
+        width: 100%;
 
         .section-header {
           padding: 30px 20px 0 30px;
@@ -114,42 +118,49 @@
         }
 
         .section-content {
+          padding-top: 20px;
+          width: 100%;
+          display: inline-block;
 
           .memory {
             margin: 40px 20px 30px 20px;
-            padding: 0 1px 5px 8px;
-            width: 30%;
+            padding: 0 1px 3px 8px;
+            width: 28%;
             background-color: #e6e6e6;
             border-radius: 4px 4px 4px 4px;
             -moz-border-radius: 4px 4px 4px 4px;
             -webkit-border-radius: 4px 4px 4px 4px;
             text-align: left;
+            float: left;
           }
 
           .memory-title {
             color: $primary-color;
             font-family: 'font-extra-bold';
-            font-size: 17px;
-            padding-top: 5px;
+            font-size: 16px;
+            padding-top: 15px;
           }
 
           .memory-bucketlist {
             color: $primary-color;
-            font-family: 'font-extra-bold';
-            font-size: 17px;
-            padding-top: 5px;
+            font-family: 'font-reg';
+            font-size: 15px;
+            margin-top: -15px;
           }
 
           .main-pic {
-            width: 97%;
-            margin-top: -10px;
+            width: 210px;
+            height: 190px;
+            margin-top: 7px;
+            margin-bottom: 10px;
+            margin-left: 15px;
           }
 
           .memory-location {
             color: $primary-color;
             font-family: 'font-extra-bold';
-            font-size: 17px;
-            padding-top: 5px;
+            font-size: 15px;
+            margin-top: 1px;
           }
         }
       }

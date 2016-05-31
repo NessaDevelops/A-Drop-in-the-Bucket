@@ -34,6 +34,53 @@ app.controller('UserDashboardCtrl', function ($scope, $rootScope, $http, $window
     console.log(data.getBucketlists);
   });
 
+  var request4 = $http.post('/findBucketlistsShared', $scope.userParse);
+
+  request4.success(function (data) {
+    // console.log(data.getBucketlists);
+    var reString = $scope.userParse.username;
+
+    var re = new RegExp(reString);
+    // console.log(re);
+    var m;
+    localStorage.removeItem("sharedBucketlists");
+    if(data.getBucketlists != null && data.getBucketlists != undefined) {
+      for(var i = 0; i < data.getBucketlists.length; i++) {
+        if((m = re.exec(data.getBucketlists[i].members)) !== null) {
+          if(m.index === re.lastIndex) {
+            re.lastIndex++;
+            console.log(m[0]);
+            console.log(data.getBucketlists[i]);
+            var retrieveSharedBlist = localStorage.getItem('sharedBucketlists');
+            var getSharedBlist;
+
+            if(retrieveSharedBlist != null && retrieveSharedBlist != 'undefined') {
+              getSharedBlist = JSON.parse(retrieveSharedBlist);
+              getSharedBlist.push(data.getBucketlists[i]);
+              console.log(getSharedBlist);
+              localStorage.setItem("sharedBucketlists", JSON.stringify(getSharedBlist));
+            } else {
+              var sharedBlist = [];
+              sharedBlist = [data.getBucketlists[i]];
+              console.log(sharedBlist);
+              localStorage.setItem("sharedBucketlists", JSON.stringify(sharedBlist));
+            }
+
+          }
+        }
+      }
+    }
+    var mySharedBucks = localStorage.getItem('sharedBucketlists');
+    $scope.sharedBucks = JSON.parse(mySharedBucks);
+    // console.log($scope.mySharedBucks);
+    // console.log($scope.myBucketlists);
+  });
+
+  request4.error(function (data) {
+    console.log(data);
+    console.log(data.getBucketlists);
+  });
+
   var request2 = $http.post('/findAllMemories', $scope.userParse);
 
   request2.success(function (data) {
@@ -44,7 +91,7 @@ app.controller('UserDashboardCtrl', function ($scope, $rootScope, $http, $window
       var imgData = $scope.myMemories[i].images;
       getImgData = localStorage.getItem(imgData);
       $scope.myMemories[i].images = getImgData;
-    };
+    }
     // console.log($scope.myMemories);
   });
 

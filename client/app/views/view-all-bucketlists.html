@@ -15,5 +15,14 @@
       <img class="third-pic" src=""/>
       <p class="tags">tags: {{bucketlist.tags}}</p>
     </div>
+    <div style="cursor: pointer" ng-click="viewAllBucketlists.change(bucketlist.name, bucketlist.owner, bucketlist.members, bucketlist.description, bucketlist.tags)" ng-repeat="bucketlist in mySharedBucketlists" class="bucketlist">
+      <p class="bucketlist-title">{{bucketlist.name}}</p>
+      <img class="people-icon" src=""/>
+      <p class="members">{{bucketlist.members}}</p>
+      <img class="main-pic" src=""/>
+      <img class="second-pic" src=""/>
+      <img class="third-pic" src=""/>
+      <p class="tags">tags: {{bucketlist.tags}}</p>
+    </div>
   </div>
 </div>
